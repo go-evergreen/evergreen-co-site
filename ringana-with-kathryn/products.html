@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- CLIENT:START head -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Products — Ringana with Kathryn</title>
+<meta name="description" content="Explore Ringana's toxin-free product system: FRESH body &amp; hair care, CAPS, PACKS, and DRINKS — fresh, intentionally formulated since 1996.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Products — Ringana with Kathryn">
+<meta property="og:description" content="Explore Ringana's toxin-free product system — FRESH body &amp; hair care, CAPS, PACKS, and DRINKS.">
+<meta property="og:image" content="og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Products — Ringana with Kathryn">
+<meta name="twitter:description" content="Explore Ringana's toxin-free product system — FRESH body &amp; hair care, CAPS, PACKS, and DRINKS.">
+<meta name="twitter:image" content="og-image.jpg">
+<meta name="theme-color" content="#1c3227">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- CLIENT:END head -->
+<style>
+/* CLIENT:START theme */
+:root{
+  --pine:#1c3227;
+  --pine-deep:#142519;
+  --linen:#f6f2ea;
+  --linen-warm:#efe8db;
+  --brass:#b3893c;
+  --brass-light:#cfa95e;
+  --sage:#8ea38f;
+  --ink:#22301f;
+  --white:#fdfcf9;
+  --header-expanded:7.5rem;
+  --header-offset:7.5rem;
+}
+/* CLIENT:END theme */
+/* CORE:START css */
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Work Sans',sans-serif;font-weight:300;color:var(--ink);background:var(--linen);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased;}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px 180px;}
+h1,h2,h3,h4,.serif{font-family:'Fraunces',serif;font-weight:400;line-height:1.15;}
+a{color:inherit;}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--brass-light);outline-offset:3px;}
+
+.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(28,50,39,0.95);
+  padding:1.35rem 2rem 1rem;
+  transition:padding .35s ease,background .35s ease,box-shadow .35s ease;
+}
+.site-header.is-scrolled{
+  padding:.8rem 2rem;
+  background:rgba(20,37,25,.98);
+  box-shadow:0 4px 24px rgba(0,0,0,.18);
+}
+.site-header-inner{
+  max-width:1060px;margin:0 auto;
+  display:flex;flex-direction:column;align-items:center;gap:.9rem;
+  transition:gap .35s ease;
+}
+.site-header.is-scrolled .site-header-inner{
+  flex-direction:row;justify-content:space-between;align-items:center;gap:1.25rem;
+}
+.site-brand{
+  font-family:'Fraunces',serif;
+  color:var(--linen);
+  font-size:clamp(1.15rem,3vw,1.6rem);
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  text-decoration:none;
+  white-space:nowrap;
+  line-height:1.2;
+  transition:font-size .35s ease,letter-spacing .35s ease;
+}
+.site-brand span{color:var(--brass-light);}
+.site-header.is-scrolled .site-brand{
+  font-size:clamp(.82rem,2.2vw,1rem);
+  letter-spacing:.14em;
+}
+.site-nav{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:1.2rem 2rem;
+  transition:gap .35s ease;
+}
+.site-header.is-scrolled .site-nav{justify-content:flex-end;gap:.85rem 1.15rem;}
+.site-nav .nav-about{margin-left:0;transition:margin-left .35s ease;}
+.site-header.is-scrolled .site-nav .nav-about{margin-left:.85rem;}
+.site-nav a{color:var(--linen);text-decoration:none;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;font-weight:400;opacity:.85;transition:opacity .2s,color .2s;}
+.site-nav a:hover{opacity:1;color:var(--brass-light);}
+.site-nav a.active{opacity:1;color:var(--brass-light);}
+.nav-cta{border:1px solid var(--brass-light);padding:.45rem 1.15rem;border-radius:2px;color:var(--brass-light) !important;opacity:1 !important;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;transition:background .2s,color .2s,opacity .35s ease,max-width .35s ease,padding .35s ease,margin .35s ease,border-color .35s ease,visibility 0s;}
+.nav-cta:hover{background:var(--brass-light);color:var(--pine) !important;}
+.nav-cta-scroll{max-width:0;padding-left:0;padding-right:0;margin-left:0;border-color:transparent;opacity:0;visibility:hidden;overflow:hidden;pointer-events:none;}
+.site-header.is-scrolled .nav-cta-scroll{max-width:11rem;padding:.45rem 1.15rem;margin-left:1rem;border-color:var(--brass-light);opacity:1;visibility:visible;pointer-events:auto;}
+body.nav-open{overflow:hidden;}
+
+.page-hero{background:linear-gradient(168deg,var(--pine-deep) 0%,var(--pine) 60%,#24402f 100%);color:var(--linen);padding:calc(var(--header-expanded) + 2rem) 2rem 4.5rem;position:relative;overflow:hidden;}
+.page-hero::after{content:'';position:absolute;right:-14vw;top:-16vh;width:52vw;height:52vw;max-width:700px;max-height:700px;border:1px solid rgba(207,169,94,.16);border-radius:50%;pointer-events:none;}
+.page-hero-inner{max-width:1060px;margin:0 auto;position:relative;z-index:2;}
+.hero-eyebrow{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brass-light);font-weight:500;margin-bottom:1.4rem;display:flex;align-items:center;gap:.9rem;}
+.hero-eyebrow::before{content:'';width:36px;height:1px;background:var(--brass-light);}
+.page-hero h1{font-size:clamp(2.4rem,5.4vw,4rem);font-weight:300;margin-bottom:1.4rem;max-width:16ch;}
+.page-hero h1 em{font-style:italic;color:var(--brass-light);}
+.page-hero p{font-size:clamp(1.02rem,1.5vw,1.2rem);max-width:56ch;opacity:.88;}
+
+.page-subnav{
+  position:sticky;
+  top:var(--header-offset);
+  z-index:90;
+  background:rgba(246,242,234,.96);
+  border-bottom:1px solid #ddd5c5;
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+}
+.page-subnav-inner{
+  max-width:1060px;
+  margin:0 auto;
+  display:flex;
+  justify-content:center;
+  gap:1.4rem;
+  padding:.55rem 2rem;
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+}
+.page-subnav a{
+  font-size:.72rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:var(--pine);
+  opacity:.72;
+  font-weight:500;
+  white-space:nowrap;
+  transition:opacity .2s,color .2s,border-color .2s;
+  padding:.45rem .15rem;
+  border-bottom:2px solid transparent;
+}
+.page-subnav a:hover,.page-subnav a.active{opacity:1;color:var(--brass);border-bottom-color:var(--brass);}
+
+section{padding:5.5rem 2rem;}
+.container{max-width:1060px;margin:0 auto;}
+.eyebrow{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-bottom:1rem;}
+.section-title{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:400;margin-bottom:1.3rem;max-width:24ch;}
+.lede{font-size:1.12rem;max-width:62ch;margin-bottom:1.6rem;}
+.btn{display:inline-block;padding:.95rem 2.4rem;font-family:'Work Sans',sans-serif;font-size:.82rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;border-radius:1px;transition:transform .22s ease,box-shadow .22s ease,background .22s ease;cursor:pointer;border:1px solid transparent;}
+.btn-brass{background:linear-gradient(160deg,#c49a4a 0%,var(--brass) 50%,#9a7530 100%);color:var(--white);box-shadow:0 2px 0 rgba(0,0,0,.14),0 6px 20px rgba(179,137,60,.3);}
+.btn-brass:hover{background:linear-gradient(160deg,#d4ad5e 0%,var(--brass-light) 55%,var(--brass) 100%);transform:translateY(-2px);box-shadow:0 3px 0 rgba(0,0,0,.1),0 10px 28px rgba(179,137,60,.38);}
+.btn-pine{background:var(--pine);color:var(--linen);box-shadow:0 4px 16px rgba(28,50,39,.2);}
+.btn-pine:hover{background:var(--pine-deep);transform:translateY(-2px);}
+
+/* Standard band */
+.standards{background:var(--pine);color:var(--linen);padding:2.2rem 2rem;}
+.standards .container{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;text-align:center;}
+.standard-item{border-left:1px solid rgba(207,169,94,.3);padding:0 .8rem;}
+.standard-item:first-child{border-left:none;}
+.standard-item .num{
+  font-family:'Caveat',cursive;
+  font-size:2.15rem;
+  font-weight:500;
+  color:var(--brass-light);
+  display:block;
+  margin-bottom:.1rem;
+  white-space:nowrap;
+  line-height:1.1;
+  letter-spacing:.01em;
+}
+.standard-item .label{
+  font-size:.7rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  opacity:.8;
+  white-space:normal;
+}
+
+/* Banished list */
+.banished{padding:0;background:var(--linen-warm);}
+.banished-banner{
+  position:relative;
+  padding:clamp(3.5rem,7vw,5.5rem) 2rem;
+  overflow:hidden;
+}
+.banished-banner-bg{
+  position:absolute;
+  inset:0;
+  z-index:0;
+}
+.banished-banner-bg img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 38%;
+  display:block;
+}
+.banished-banner-bg::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,transparent 0%,rgba(246,242,234,.1) 55%,rgba(246,242,234,.28) 100%);
+  pointer-events:none;
+}
+.banished-banner-overlay{position:relative;z-index:2;}
+.banished-grid{display:grid;grid-template-columns:5fr 6fr;gap:2.5rem;align-items:start;}
+.banished-text-box{
+  background:rgba(253,252,249,.92);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  border-radius:2px;
+  padding:1.5rem 1.65rem 1.55rem;
+  box-shadow:0 8px 24px rgba(28,50,39,.08);
+}
+.banished-text-box .section-title{margin-bottom:1rem;}
+.banished-text-box p{margin-bottom:1.1rem;max-width:none;}
+.banished-text-box p:last-child{margin-bottom:0;}
+.no-list{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;}
+.no-item{background:rgba(255,255,255,.94);border-left:3px solid var(--pine);padding:.85rem 1.1rem;font-size:.92rem;border-radius:2px;box-shadow:0 4px 16px rgba(28,50,39,.06);}
+.no-item::before{content:'✕  ';color:var(--brass);font-weight:600;}
+
+/* Product lines */
+.lines{background:var(--linen-warm);}
+.line-block{
+  display:grid;
+  grid-template-columns:160px 1fr;
+  gap:2.6rem;
+  padding:2.5rem 0;
+  border-top:1px solid #ddd5c5;
+  align-items:start;
+}
+.line-block:first-of-type{padding-top:2.5rem;}
+.line-block:last-of-type{padding-bottom:0;}
+.line-tag{position:sticky;top:6rem;width:160px;}
+.line-thumb-wrap{
+  width:160px;
+  max-width:160px;
+  height:160px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  margin-bottom:.75rem;
+}
+.line-thumb{
+  width:100%;
+  height:100%;
+  max-width:160px;
+  max-height:160px;
+  object-fit:contain;
+  background:transparent;
+  border:none;
+  border-radius:0;
+  padding:0;
+  display:block;
+  filter:drop-shadow(0 8px 20px rgba(28,50,39,.1));
+}
+.line-tag .kicker{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-bottom:.3rem;}
+.line-body p{margin-bottom:1.1rem;max-width:62ch;}
+.line-body p strong{font-weight:500;}
+.chip-row{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.1rem;}
+.chip{
+  background:var(--white);
+  border:1px solid #ddd5c5;
+  border-radius:20px;
+  padding:.38rem 1rem;
+  font-size:.83rem;
+  font-family:inherit;
+  color:inherit;
+}
+.chip.ingredient-chip{
+  cursor:pointer;
+  transition:border-color .2s,background .2s,transform .2s;
+}
+.chip.ingredient-chip:hover,
+.chip.ingredient-chip:focus-visible,
+.chip.ingredient-chip.is-active{
+  border-color:var(--brass);
+  background:rgba(179,137,60,.1);
+  transform:translateY(-1px);
+  outline:none;
+}
+.chip.ingredient-chip::after{
+  content:'+';
+  margin-left:.35rem;
+  font-size:.75rem;
+  color:var(--brass);
+  font-weight:600;
+}
+
+/* Ingredient popup */
+.ingredient-popup{
+  position:fixed;
+  z-index:250;
+  width:min(92vw,420px);
+  background:var(--white);
+  border:1px solid #e3d9c8;
+  border-left:3px solid var(--brass);
+  border-radius:2px;
+  padding:1.4rem 1.5rem 1.3rem;
+  box-shadow:0 18px 48px rgba(28,50,39,.18);
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transform:translateY(6px);
+  transition:opacity .2s ease,transform .2s ease,visibility .2s ease;
+}
+.ingredient-popup.open{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+  transform:none;
+}
+.ingredient-popup-label{
+  font-family:'Caveat',cursive;
+  font-size:1.65rem;
+  color:var(--pine);
+  margin-bottom:.9rem;
+  line-height:1.1;
+}
+.ingredient-popup h4{
+  font-size:.72rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--brass);
+  font-weight:600;
+  margin-bottom:.35rem;
+}
+.ingredient-popup p{
+  font-size:.88rem;
+  line-height:1.55;
+  margin-bottom:.85rem;
+  opacity:.92;
+}
+.ingredient-popup ul{
+  font-size:.88rem;
+  line-height:1.55;
+  margin:0 0 .85rem;
+  padding-left:1.1rem;
+  opacity:.92;
+}
+.ingredient-popup ul li{margin-bottom:.45rem;}
+.ingredient-popup ul li:last-child{margin-bottom:0;}
+.ingredient-popup p:last-child{margin-bottom:0;}
+.ingredient-popup-close{
+  position:absolute;
+  top:.5rem;right:.55rem;
+  background:none;border:none;
+  font-size:1.4rem;line-height:1;
+  color:var(--pine);cursor:pointer;
+  opacity:.55;
+}
+.ingredient-popup-close:hover{opacity:1;}
+.ingredient-popup-note{display:none;}
+.chip-hint{
+  font-size:.78rem;
+  letter-spacing:.04em;
+  opacity:.55;
+  margin-top:.6rem;
+  font-style:italic;
+}
+.radar-carousel > .chip-hint{
+  display:block;
+  text-align:center;
+  margin:1.1rem auto .15rem;
+  max-width:none;
+  white-space:nowrap;
+  padding:0 .75rem;
+  font-size:.92rem;
+  letter-spacing:.03em;
+  opacity:.65;
+}
+
+/* Freshness explainer */
+.freshness{background:var(--pine);color:var(--linen);position:relative;overflow:hidden;}
+.freshness::after{content:'';position:absolute;left:-12vw;bottom:-24vh;width:48vw;height:48vw;border:1px solid rgba(207,169,94,.14);border-radius:50%;pointer-events:none;}
+.freshness .eyebrow{color:var(--brass-light);}
+.freshness .section-title{color:var(--linen);}
+.freshness .lede{opacity:.9;}
+.fresh-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.6rem;position:relative;z-index:2;}
+.fresh-grid-two{grid-template-columns:repeat(2,1fr);}
+.fresh-card{border:1px solid rgba(207,169,94,.3);border-radius:3px;padding:1.9rem 1.6rem;background:rgba(20,37,25,.35);}
+.fresh-card h3{color:var(--brass-light);font-size:1.15rem;margin-bottom:.6rem;}
+.fresh-card p{font-size:.93rem;opacity:.88;}
+
+/* Sustainability */
+.sustain{background:var(--linen);}
+.sustain-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem;margin-top:2.4rem;}
+.sustain-card{background:var(--white);border-radius:3px;padding:1.9rem 1.7rem;border-top:3px solid var(--sage);}
+.sustain-card h3{font-size:1.15rem;margin-bottom:.55rem;}
+.sustain-card p{font-size:.94rem;opacity:.9;}
+
+/* On my radar — carousel */
+.radar{background:var(--linen-warm);}
+.radar-carousel{
+  position:relative;
+  margin-top:2.6rem;
+  padding:0 2.8rem;
+  overflow:hidden;
+}
+.carousel-viewport{overflow:hidden;width:100%;}
+.carousel-track{
+  display:flex;
+  flex-wrap:nowrap;
+  width:100%;
+  transition:transform .5s cubic-bezier(.4,0,.2,1);
+  will-change:transform;
+}
+.carousel-slide{
+  flex:0 0 100%;
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  box-sizing:border-box;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1.6rem;
+  align-items:center;
+  justify-items:center;
+  padding:0 1rem;
+  text-align:center;
+}
+.carousel-shot{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:200px;
+  height:200px;
+  flex-shrink:0;
+}
+.carousel-shot img{
+  width:100%;
+  height:100%;
+  max-width:200px;
+  max-height:200px;
+  object-fit:contain;
+  object-position:center;
+  display:block;
+  background:transparent;
+  border:0;
+  outline:0;
+  box-shadow:none;
+  /* soft shadow only — avoid dark edge artifacts looking like a stroke */
+  filter:drop-shadow(0 8px 18px rgba(28,50,39,.10));
+}
+.carousel-shot img[src*="caps-"],
+.carousel-shot img[src*="sport-"],
+.carousel-shot img[src*="drinks-"],
+.carousel-shot img[src*="fresh-"]{
+  /* tin/bottle PNGs already include their own lighting */
+}
+.carousel-copy{width:100%;max-width:54ch;margin:0 auto;}
+.carousel-copy .chip-row{justify-content:center;}
+.carousel-copy .chip-hint{text-align:center;}
+.carousel-copy .radar-kicker{margin-bottom:.55rem;}
+.carousel-copy p{font-size:.96rem;opacity:.92;margin-bottom:1rem;}
+.carousel-btn{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:2.6rem;height:2.6rem;
+  border-radius:50%;
+  border:1px solid #ddd5c5;
+  background:var(--white);
+  color:var(--pine);
+  font-size:1.35rem;
+  line-height:1;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 4px 16px rgba(28,50,39,.1);
+  transition:background .2s,border-color .2s,transform .2s;
+  z-index:2;
+}
+.carousel-btn:hover{background:var(--linen);border-color:var(--brass);transform:translateY(-50%) scale(1.04);}
+.carousel-btn.prev{left:0;}
+.carousel-btn.next{right:0;}
+.carousel-footer{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:1.2rem;
+  margin-top:1.6rem;
+}
+.carousel-dots{display:flex;gap:.45rem;flex-wrap:wrap;justify-content:center;}
+.carousel-dot{
+  width:7px;height:7px;
+  border-radius:50%;
+  border:none;
+  background:#ddd5c5;
+  cursor:pointer;
+  padding:0;
+  transition:background .2s,transform .2s;
+}
+.carousel-dot.active{background:var(--brass);transform:scale(1.2);}
+.carousel-counter{
+  font-size:.72rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  opacity:.5;
+  min-width:3.5rem;
+  text-align:center;
+}
+.radar-foot{margin-top:2.2rem;font-family:'Fraunces',serif;font-style:italic;color:var(--pine);max-width:56ch;margin-left:auto;margin-right:auto;text-align:center;}
+
+@media (min-width:881px){
+  .carousel-slide{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:2.8rem;
+    padding:0 5rem;
+    text-align:left;
+  }
+  .carousel-shot{flex:0 0 200px;margin:0;}
+  .carousel-copy{flex:0 1 52ch;margin:0;max-width:52ch;}
+  .carousel-copy .chip-row{justify-content:flex-start;}
+  .carousel-copy .chip-hint{text-align:left;}
+}
+
+/* CTA */
+.cta-band{background:var(--linen-warm);text-align:center;}
+.cta-band .section-title{margin-left:auto;margin-right:auto;}
+.cta-band .lede{margin-left:auto;margin-right:auto;}
+.cta-band .btn{margin-top:1rem;}
+
+/* ------- FOOTER ------- */
+footer{
+  background:var(--pine-deep);
+  color:var(--linen);
+  padding:3rem 2rem 2.2rem;
+  text-align:center;
+}
+.foot-brand{
+  font-family:'Fraunces',serif;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-size:1rem;
+  margin-bottom:.8rem;
+}
+.foot-brand span{color:var(--brass-light);}
+.foot-cta{
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-size:1.02rem;
+  opacity:.82;
+  margin-bottom:1.1rem;
+  max-width:48ch;
+  margin-left:auto;
+  margin-right:auto;
+}
+.foot-cta a{color:var(--brass-light);text-decoration:none;border-bottom:1px solid rgba(207,169,94,.35);}
+.foot-cta a:hover{opacity:1;border-bottom-color:var(--brass-light);}
+.foot-cta{margin-bottom:.85rem;}
+.foot-social-icons{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:1rem;
+  margin:0 auto 1.35rem;
+}
+.foot-social-icons a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:2.1rem;
+  height:2.1rem;
+  color:var(--brass-light);
+  border-bottom:none !important;
+  opacity:.92;
+  transition:opacity .2s,transform .2s,color .2s;
+}
+.foot-social-icons a:hover{
+  opacity:1;
+  color:var(--linen);
+  transform:translateY(-1px);
+  border-bottom:none !important;
+}
+.foot-social-icons svg{width:1.35rem;height:1.35rem;display:block;}
+footer p{font-size:.8rem;opacity:.6;max-width:70ch;margin:0 auto .5rem;}
+.foot-social{margin:1.2rem 0;}
+.foot-social a{
+  color:var(--linen);
+  text-decoration:none;
+  font-size:.85rem;
+  letter-spacing:.08em;
+  margin:0 .9rem;
+  opacity:.8;
+}
+.foot-social a:hover{opacity:1;color:var(--brass-light);}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.visible{opacity:1;transform:none;}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}.reveal{opacity:1;transform:none;transition:none;}.chip.ingredient-chip:hover{transform:none;}.carousel-track{transition:none;}}
+
+@media (max-width:880px){
+  .site-header{padding:1rem .9rem .9rem;}
+  .site-header.is-scrolled{padding:.85rem .9rem;}
+  .site-header.is-scrolled .site-header-inner{
+    flex-direction:column;
+    align-items:center;
+    gap:.65rem;
+  }
+  .site-brand{font-size:1.02rem;letter-spacing:.12em;text-align:center;width:100%;padding-right:.12em;}
+  .site-header.is-scrolled .site-brand{font-size:.92rem;letter-spacing:.1em;width:100%;}
+  .site-nav{gap:.15rem .2rem;justify-content:center;width:100%;}
+  .site-header.is-scrolled .site-nav{justify-content:center;gap:.15rem .2rem;width:100%;}
+  .site-nav a{
+    font-size:.68rem;
+    letter-spacing:.06em;
+    padding:.55rem .7rem;
+    opacity:.95;
+  }
+  .site-header.is-scrolled .site-nav .nav-about{margin-left:0;}
+  .nav-cta{padding:.6rem 1.05rem;font-size:.68rem;letter-spacing:.07em;}
+  .site-header.is-scrolled .nav-cta-scroll{
+    max-width:14rem;
+    padding:.6rem 1.05rem;
+    margin-left:0;
+    margin-top:.1rem;
+    font-size:.68rem;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .standards{padding:2rem 1rem;overflow:hidden;}
+  .standards .container{grid-template-columns:1fr 1fr;gap:1.1rem .75rem;width:100%;max-width:100%;margin:0;padding:0;}
+  .standard-item,
+  .standard-item:first-child,
+  .standard-item:nth-child(3){
+    border-left:none !important;
+    border-top:1px solid rgba(207,169,94,.22);
+    padding:.55rem .25rem 0;
+  }
+  .standard-item:nth-child(1),
+  .standard-item:nth-child(2){border-top:none;padding-top:0;}
+  .standard-item .num{font-size:1.7rem;white-space:normal;}
+  .standard-item .label{font-size:.6rem;letter-spacing:.03em;line-height:1.35;white-space:normal;}
+  .page-subnav{
+    background:#fdfcf9 !important;
+    border-bottom:1px solid #cfc5b4;
+    box-shadow:0 6px 18px rgba(28,50,39,.06);
+  }
+  .page-subnav-inner{padding:.2rem .35rem;gap:0;justify-content:stretch;}
+  .page-subnav a{
+    font-size:.66rem;
+    letter-spacing:.07em;
+    color:var(--pine) !important;
+    opacity:1 !important;
+    font-weight:600;
+    padding:.85rem .35rem;
+    flex:1 1 0;
+    text-align:center;
+    border-bottom:2px solid transparent;
+  }
+  .page-subnav a.active,
+  .page-subnav a:hover{
+    color:var(--brass) !important;
+    border-bottom-color:var(--brass);
+  }
+  .banished-banner{padding:3rem 1.4rem;}
+  .banished-grid{grid-template-columns:1fr;gap:2rem;}
+  .line-block{grid-template-columns:1fr;gap:1rem;}
+  .line-tag{position:static;width:auto;}
+  .line-thumb-wrap{width:100%;max-width:160px;height:160px;margin:0 auto .75rem;}
+  .fresh-grid{grid-template-columns:1fr;}
+  .sustain-grid{grid-template-columns:1fr;}
+  .carousel-slide{gap:1.4rem;padding:0 .5rem;}
+  .carousel-shot{width:180px;height:180px;}
+  .carousel-shot img{max-width:180px;max-height:180px;}
+  .radar-carousel{padding:0 2.2rem;}
+}
+@media (max-width:640px){
+  section{padding:4rem 1.4rem;}
+  .page-hero{padding:calc(var(--header-expanded) + 2rem) 1.4rem 3.6rem;}
+  .no-list{grid-template-columns:1fr;}
+  .site-header{padding:.95rem .85rem .85rem;}
+  .site-nav a{font-size:.66rem;padding:.55rem .55rem;}
+}
+footer .foot-copy a,footer .foot-legal a{color:var(--brass-light);text-decoration:none;border-bottom:1px solid rgba(207,169,94,.35);}
+footer .foot-copy a:hover,footer .foot-legal a:hover{border-bottom-color:var(--brass-light);}
+footer .foot-legal{max-width:78ch;}
+.letter-join-consent{display:flex;align-items:flex-start;gap:.55rem;margin:.15rem 0 0;font-size:.78rem;line-height:1.45;opacity:.78;text-align:left;font-family:'Work Sans',system-ui,sans-serif;}
+.letter-join-consent input{margin-top:.2rem;flex:0 0 auto;}
+.letter-join-consent a{color:var(--brass);text-decoration:underline;}
+.connect-modal{position:fixed;inset:0;z-index:10000;display:flex;align-items:center;justify-content:center;padding:1.4rem;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .25s ease,visibility .25s ease;}
+.connect-modal.open{opacity:1;visibility:visible;pointer-events:auto;}
+.connect-modal-backdrop{position:absolute;inset:0;background:rgba(20,37,25,.65);}
+.connect-modal-panel.letter-panel{position:relative;z-index:2;width:min(100%,560px);max-height:min(92dvh,820px);overflow:auto;background:transparent;border:none;box-shadow:none;padding:0;}
+.connect-modal-close{position:absolute;top:.6rem;right:.8rem;z-index:3;background:rgba(255,255,255,.7);border:1px solid #e3d9c8;border-radius:50%;font-size:1.5rem;line-height:1;color:var(--pine);cursor:pointer;width:2.2rem;height:2.2rem;display:flex;align-items:center;justify-content:center;}
+.letter-paper{background:linear-gradient(175deg,#fffcf7 0%,#f8f3ea 100%);border:1px solid #e3d9c8;border-radius:2px;padding:2.8rem 2.6rem 2.4rem;box-shadow:0 24px 60px rgba(28,50,39,.24),inset 0 1px 0 rgba(255,255,255,.85);position:relative;}
+.letter-paper::before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.05;pointer-events:none;border-radius:2px;}
+.letter-head,.letter-body-copy,.letter-form,.letter-sign,.modal-fine{position:relative;z-index:1;}
+.letter-salutation{font-family:'Caveat',cursive;font-size:2.4rem;font-weight:500;margin-bottom:.6rem;color:var(--pine);line-height:1.1;transform:rotate(-.8deg);transform-origin:left center;}
+.letter-body-copy p{font-family:'Caveat',cursive;font-size:1.45rem;line-height:1.55;margin-bottom:1.2rem;max-width:48ch;color:var(--ink);}
+.letter-form{margin-top:.4rem;}
+.letter-form .formkit-form{margin:0 auto !important;max-width:100% !important;background:transparent !important;border:none !important;box-shadow:none !important;}
+.letter-form .formkit-background{display:none !important;}
+.letter-form .formkit-header,.letter-form .formkit-subheader,.letter-form .formkit-guarantee,.letter-form .formkit-disclaimer,.letter-form .formkit-powered-by{display:none !important;}
+.letter-form .formkit-column{padding-bottom:0 !important;}
+.letter-form .formkit-submit{margin-bottom:0 !important;}
+.letter-form [data-style=minimal]{padding:0 !important;}
+.letter-form input,.letter-form textarea,.letter-form select,.letter-form button{font-family:'Work Sans',sans-serif !important;}
+.letter-sign{font-family:'Caveat',cursive;margin-top:.5rem;color:var(--pine);font-size:1.75rem;font-weight:500;transform:rotate(-1.2deg);transform-origin:left center;}
+.modal-fine{font-size:.75rem;opacity:.55;margin-top:1.2rem;text-align:left;}
+/* CORE:END css */
+</style>
+</head>
+<body>
+
+<!-- CLIENT:START site-header -->
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
+    <a href="index.html" class="site-brand">Ringana <span>·</span> with Kathryn</a>
+    <nav class="site-nav" id="navLinks" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">The Products</a>
+      <a href="business.html">The Business</a>
+      <a href="about.html" class="nav-about">About Me</a>
+      <a href="#" class="nav-cta nav-cta-scroll" data-open-connect>Get First Access</a>
+    </nav>
+  </div>
+</header>
+<!-- CLIENT:END site-header -->
+<!-- CLIENT:START page-products -->
+
+<header class="page-hero">
+  <div class="page-hero-inner">
+    <div class="hero-eyebrow">The Products</div>
+    <h1>Your entire routine. <em>One standard.</em></h1>
+    <p>Ringana makes a tightly curated system of body care, supplements, and functional nutrition — every product fresh and totally toxin free. Through my partnership with Ringana, I'm getting early access before the U.S. launch to test, photograph, and share what's coming.</p>
+  </div>
+</header>
+
+<div class="standards">
+  <div class="container">
+    <div class="standard-item"><span class="num">Fresh</span><span class="label">Small batches, made to order</span></div>
+    <div class="standard-item"><span class="num">Toxin free</span><span class="label">Intentionally chosen ingredients</span></div>
+    <div class="standard-item"><span class="num">In-house</span><span class="label">Developed &amp; produced in-house</span></div>
+    <div class="standard-item"><span class="num">Direct</span><span class="label">Shipped straight to your door</span></div>
+  </div>
+</div>
+
+<nav class="page-subnav" aria-label="On this page">
+  <div class="page-subnav-inner">
+    <a href="#system">The System</a>
+    <a href="#freshness">Freshness</a>
+    <a href="#radar">On My Radar</a>
+  </div>
+</nav>
+
+<!-- ============ MISSION ============ -->
+<section style="background:var(--linen);padding-bottom:2.5rem;">
+  <div class="container reveal">
+    <p class="eyebrow">The Mission</p>
+    <h2 class="section-title">"We can do better than that."</h2>
+    <p class="lede">That sentence has guided Ringana for thirty years: prove that body care, wellness, and supplements can be completely fresh, genuinely effective, and free of every unnecessary additive — and that a company can be transparent while doing it.</p>
+    <p style="max-width:62ch;margin-bottom:1.2rem;">Every formula starts from scratch, and because Ringana develops, produces, and ships from its own facilities, there's no gap between what they promise and what you receive.</p>
+    <p style="max-width:62ch;">Their three pillars are actually: <strong style="font-weight:500;">Freshness, Trendsetting and Excellence</strong></p>
+  </div>
+</section>
+
+<!-- ============ WHAT'S NOT IN IT ============ -->
+<section class="banished">
+  <div class="banished-banner">
+    <div class="banished-banner-bg" aria-hidden="true">
+      <img src="standard-banner.webp" alt="" loading="lazy" decoding="async" width="1400" height="896">
+    </div>
+    <div class="banished-banner-overlay">
+      <div class="container banished-grid">
+        <div class="banished-text-box reveal">
+          <p class="eyebrow">The Standard</p>
+          <h2 class="section-title">Toxin free that means <em style="font-style:italic;color:var(--brass);">toxin free.</em></h2>
+          <p>Most "clean" brands remove a few headline offenders and call it a day. Ringana was built the opposite way: begin with nothing, and only add what serves your skin and body.</p>
+          <p>Every ingredient is vetted for naturalness and sustainability before it's allowed near a formula — with transparent supply chains and regular controls behind the claims.</p>
+          <p>Concentrated plant actives — antioxidants and sensitive botanical ingredients so potent they couldn't survive in a conventional, shelf-stable formula at all.</p>
+        </div>
+        <div class="no-list reveal" aria-label="Ingredients Ringana does not use">
+          <div class="no-item">Artificial preservatives (phenoxyethanol, parabens &amp; more)</div>
+          <div class="no-item">PEGs &amp; other ethoxylated ingredients</div>
+          <div class="no-item">Mineral oils &amp; petroleum derivatives</div>
+          <div class="no-item">Microplastics</div>
+          <div class="no-item">Synthetic fragrances &amp; dyes</div>
+          <div class="no-item">Formaldehyde releasers</div>
+          <div class="no-item">Solvents &amp; unnecessary stabilizers</div>
+          <div class="no-item">Animal ingredients &amp; testing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCT LINES ============ -->
+<section class="lines" id="system">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow">The System</p>
+      <h2 class="section-title">Four lines, built to live together.</h2>
+      <p class="lede">From your morning deodorant and hair care to your evening supplements, the whole routine comes from one place, held to one bar. Here's how it fits together.</p>
+    </div>
+
+    <div class="line-block reveal" id="fresh">
+      <div class="line-tag">
+        <div class="line-thumb-wrap">
+          <img class="line-thumb" src="fresh-deodorant.webp" alt="RINGANA FRESH deodorant" loading="lazy" decoding="async" width="200" height="200">
+        </div>
+        <p class="kicker">Body · Hair · Oral Care</p>
+      </div>
+      <div class="line-body">
+        <p><strong>FRESH</strong> is Ringana's certified-fresh personal care line — body care, deodorant, hair care, and oral care made in small batches so plant actives arrive at full potency. Formulas are built without the unnecessary additives that fill conventional products.</p>
+        <div class="chip-row">
+          <button type="button" class="chip ingredient-chip" data-label="Full-potency actives" data-ingredients="Highly concentrated antioxidant plant actives made without the preservatives that limit conventional formulas." data-why="The sensitive botanicals that do the most are also the fastest to degrade — fresh production means they arrive working, not faded.">Full-potency actives</button>
+          <button type="button" class="chip ingredient-chip" data-label="Daily body &amp; hair care" data-ingredients="Plant oils, botanical extracts, and microbiome-minded formulas for deodorant, hair, and body." data-why="Everyday products you use most should meet the same ingredient bar as anything else you put on or in your body.">Daily body &amp; hair care</button>
+          <button type="button" class="chip ingredient-chip" data-label="Made fresh to order" data-ingredients="Small-batch production with short expiration dates — like real food." data-why="A short date is proof nothing artificial is holding the formula together on a warehouse shelf.">Made fresh to order</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="line-block reveal" id="caps">
+      <div class="line-tag">
+        <div class="line-thumb-wrap">
+          <img class="line-thumb" src="caps-cerebro.webp" alt="RINGANA CAPS cerebro" loading="lazy" decoding="async" width="200" height="200">
+        </div>
+        <p class="kicker">Targeted Supplements</p>
+      </div>
+      <div class="line-body">
+        <p><strong>CAPS</strong> deliver concentrated plant power in capsule form, each blend designed for a specific need. They're the "meet your body where it is" layer of the system — built to slot into your daily rhythm alongside FRESH and PACKS.</p>
+        <div class="chip-row">
+          <button type="button" class="chip ingredient-chip" data-label="Focus &amp; clarity (cerebro)" data-ingredients="Citicoline, sage extract, grape and blueberry compounds, rhodiola." data-why="Citicoline supports brain cell communication; sage and berry polyphenols help protect cognitive function; rhodiola supports mental stamina under pressure.">Focus &amp; clarity</button>
+          <button type="button" class="chip ingredient-chip" data-label="Joints &amp; mobility (move)" data-ingredients="Turmeric extract (curcuRouge™), frankincense extract (AprèsFlex®), MSM, horsetail extract, calcium from algae, vitamins C, D3, and K2." data-why="Turmeric and boswellic acids support joint comfort; MSM and horsetail nourish connective tissue; vitamins D3 and K2 help maintain normal bones and muscle function.">Joints &amp; mobility</button>
+          <button type="button" class="chip ingredient-chip" data-label="Targeted blends" data-list="true" data-ingredients="• beauty&amp;hair — L-carnosine, saw palmetto, hyaluronic acid · Strengthens skin, hair &amp; nails from within • fem — Shatavari, linseed, broccoli sprout · Menopause balance &amp; hormone support • move — Turmeric, frankincense, MSM, vitamins D3 &amp; K2 · Joints, bones &amp; mobility • pump — Grapeseed OPCs, CoQ10 · Heart &amp; circulation • immu — Medicinal mushrooms, black elderberry · Immune defense • cerebro — Citicoline, sage, rhodiola · Focus, memory &amp; mental clarity • mascu — Saw palmetto, fenugreek · Men's wellness &amp; prostate support • omega 3 vegiplus — Algae omega-3, olive extract, CoQ10 · Plant-based omega-3 &amp; cell protection • moodoo — Saffron, tulsi, schisandra · Mood &amp; nerve strength • hydro — Cranberry, hibiscus · Bladder &amp; kidney support">Targeted blends</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="line-block reveal" id="packs">
+      <div class="line-tag">
+        <div class="line-thumb-wrap">
+          <img class="line-thumb" src="packs-abc.webp" alt="RINGANA pack antiox, balancing, and cleansing" loading="lazy" decoding="async" width="200" height="200">
+        </div>
+        <p class="kicker">Daily Foundation</p>
+      </div>
+      <div class="line-body">
+        <p><strong>PACKS</strong> are portion-sized sachets of powdered plant nutrition — the consistent foundation underneath everything else. The ABC trio covers three daily needs: antioxidant support, acid–base balance, and digestive fibre.</p>
+        <div class="chip-row">
+          <button type="button" class="chip ingredient-chip" data-label="Cell protection (pack antiox)" data-ingredients="Freeze-dried raspberry, strawberry, mango, and apple; acerola; grape seed &amp; skin extract; elderberry; sea buckthorn; maqui berry; vitamins D3 and K2." data-why="Water- and fat-soluble antioxidants help neutralize free radicals from stress, poor sleep, and environmental exposure.">Cell protection</button>
+          <button type="button" class="chip ingredient-chip" data-label="Acid–base balance (pack balancing)" data-ingredients="Vegetable-based blend with minerals and plant compounds for acid–base balance." data-why="When diet and stress throw your system off center, targeted minerals and botanicals help your body maintain its natural equilibrium.">Acid–base balance</button>
+          <button type="button" class="chip ingredient-chip" data-label="Prebiotic fibre (pack cleansing)" data-ingredients="11 g of prebiotic fibre per cleansing sachet, plus plant-based cleansing support." data-why="Prebiotic fibre feeds beneficial gut bacteria, which play a bigger role in digestion, immunity, and everyday balance than most people realize.">Prebiotic fibre</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="line-block reveal" id="drinks">
+      <div class="line-tag">
+        <div class="line-thumb-wrap">
+          <img class="line-thumb" src="drinks-dea.webp" alt="RINGANA drink dea" loading="lazy" decoding="async" width="200" height="200">
+        </div>
+        <p class="kicker">Functional Beverages</p>
+      </div>
+      <div class="line-body">
+        <p><strong>DRINKS</strong> are clean functional shots and beverages — real support without the artificial sweeteners, colors, and mystery ingredients that dominate the beverage aisle.</p>
+        <div class="chip-row">
+          <button type="button" class="chip ingredient-chip" data-label="Metabolism (dea)" data-ingredients="Mate extract, green coffee extract, metabolaid® lemon verbena &amp; hibiscus, vitamin C, zinc, chromium, and prebiotic fibre." data-why="Mate and green coffee support energy metabolism; vitamin C helps reduce tiredness; zinc supports normal macronutrient metabolism; chromium helps maintain normal blood sugar levels.">Metabolism support</button>
+          <button type="button" class="chip ingredient-chip" data-label="Energy (chi)" data-ingredients="Maca root extract, ginger, matcha, ginseng, and natural caffeine (~83 mg per 30 ml shot)." data-why="Plant-based caffeine with adaptogens provides a clean lift in focus and alertness — without the crash that comes from synthetic stimulant blends.">Natural energy</button>
+          <button type="button" class="chip ingredient-chip" data-label="Targeted blends" data-list="true" data-ingredients="• chi — Maca, ginger, matcha, ginseng, natural caffeine · Energy, focus &amp; alertness without the jitters • dea — Mate, green coffee, tulsi, metabolaid® complex · Metabolism, diet &amp; everyday balance • bty — Vegan collagen, hyaluronic acid, sea buckthorn · Skin radiance &amp; elasticity from within • isi — Magnesium &amp; calming plant extracts · Relaxation &amp; easier wind-down">Targeted blends</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANUFACTURING ============ -->
+<section style="background:var(--linen);">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow">Manufacturing Standards</p>
+      <h2 class="section-title">Nothing outsourced. Nothing assumed.</h2>
+      <p class="lede">Most beauty and supplement brands are marketing companies — the actual formulating and manufacturing happens at contract facilities they don't control. Ringana is the opposite: a manufacturer first.</p>
+    </div>
+    <div class="sustain-grid">
+      <div class="sustain-card reveal" style="border-top-color:var(--brass);">
+        <h3>Developed by in-house researchers</h3>
+        <p>Every formula is conceived by Ringana's own scientists — not licensed, not white-labeled, not copied from a contract lab's catalog. The complex recipes are theirs alone.</p>
+      </div>
+      <div class="sustain-card reveal" style="border-top-color:var(--brass);">
+        <h3>Produced on Ringana's own campus</h3>
+        <p>Products are crafted in small batches at the company's own facilities in Styria, Austria — from the original Frischewerk to the modern campus at St. Johann in der Haide. Soon, the Roanoke, Virginia facility brings that same in-house production to American soil.</p>
+      </div>
+      <div class="sustain-card reveal" style="border-top-color:var(--brass);">
+        <h3>Made fresh, to order</h3>
+        <p>Small-batch, on-demand production means every order is made close to the moment you place it — never pulled from a warehouse where it's been aging under fluorescent lights. Logistics, too, run through Ringana's own center.</p>
+      </div>
+      <div class="sustain-card reveal" style="border-top-color:var(--brass);">
+        <h3>Vetted suppliers, audited chains</h3>
+        <p>Raw ingredients come from carefully selected suppliers who meet Ringana's criteria for naturalness and sustainability, with transparent supply chains and regular controls — all documented publicly in the company's transparency report.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FRESHNESS ============ -->
+<section class="freshness" id="freshness">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow">Why Fresh Matters</p>
+      <h2 class="section-title">The expiration date is proof.</h2>
+      <p class="lede">Ringana products expire in months, not years — like real food. The short date is something they’re proud of.</p>
+    </div>
+    <div class="fresh-grid fresh-grid-two">
+      <div class="fresh-card reveal">
+        <h3>Full-potency actives</h3>
+        <p>The plant compounds that do the most — antioxidants, vitamins — are also the fastest to degrade. Fresh production means they arrive working, not faded.</p>
+      </div>
+      <div class="fresh-card reveal">
+        <h3>Made to order, shipped direct</h3>
+        <p>Small batches produced on demand and sent straight to your door — never warehoused for months under fluorescent lights. Soon, made fresh on American soil in Virginia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SUSTAINABILITY ============ -->
+<section class="sustain">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow">The Whole Picture</p>
+      <h2 class="section-title">Clean for your body. Clean for the planet.</h2>
+      <p class="lede">Toxin free doesn't stop at the ingredient list. Ringana's operations are built around the same principle: leave nothing behind that doesn't belong.</p>
+    </div>
+    <div class="sustain-grid">
+      <div class="sustain-card reveal">
+        <h3>The REuse program: first of its kind</h3>
+        <p>Ringana was the first company in the cosmetics industry to make its glass flakons genuinely refillable. Return ten empty glass flakons and you receive a free product of your choice. Returned bottles are inspected by hand, sterilized in a laboratory-grade washing process, fitted with all-new inner pouches and pumps, and sent back into production for a second life.</p>
+      </div>
+      <div class="sustain-card reveal">
+        <h3>Packaging built to reduce waste</h3>
+        <p>Ringana isn't plastic-free — and they don't claim to be. Products ship in refillable glass flakons (with new inner pouches and pumps on each cycle), supplements use what's needed for safety and freshness, and shipping relies on compostable corn-starch packing chips made in-house, paper tape, and recycled fiber cartons. They're also working toward 30% post-consumer recycled plastic in packaging by 2030 — with about 20% PCR content already in use.</p>
+      </div>
+      <div class="sustain-card reveal">
+        <h3>On-demand production</h3>
+        <p>Ringana produces in small batches based on actual orders — not warehouse forecasts. That means less overproduction, less waste sitting on shelves, and products that reach you closer to the moment they were made.</p>
+      </div>
+      <div class="sustain-card reveal">
+        <h3>Transparency you can read for yourself</h3>
+        <p>Ringana publishes public transparency and sustainability reports covering ingredients, sourcing, packaging, and the business model — plus detailed "Care Facts" on individual products. It's more disclosure than most beauty brands offer, even if it's still the company's own reporting.</p>
+      </div>
+      <div class="sustain-card reveal">
+        <h3>Everything under one roof</h3>
+        <p>Development, production, and logistics all happen on Ringana's own campus — full control of quality from raw ingredient to your doorstep, with no middlemen in between.</p>
+      </div>
+      <div class="sustain-card reveal">
+        <h3>Measured results, not just promises</h3>
+        <p>Ringana's own FRESH IMPACT reporting tracks concrete numbers: a 37% REuse rate on eligible glass flakons, 76% internal recycling across operations, and ongoing investment in circular packaging — including a climate partnership protecting the Dürrenstein-Lassingtal wilderness in Austria.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ON MY RADAR ============ -->
+<section class="radar" id="radar">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <p class="eyebrow">On My Radar</p>
+      <h2 class="section-title" style="margin-left:auto;margin-right:auto;max-width:20ch;">What I'm most looking forward to trying.</h2>
+      <p class="lede" style="margin-left:auto;margin-right:auto;">The full U.S. lineup is still being finalized, but through my partnership with Ringana I'm getting early access before anyone else in the USA. These are the products I'm most excited to test first. Join the list and you'll hear my honest take as I work through them.</p>
+    </div>
+    <div class="radar-carousel reveal" id="radarCarousel" aria-roledescription="carousel" aria-label="Products on my radar">
+      <button type="button" class="carousel-btn prev" aria-label="Previous product">&#8249;</button>
+      <div class="carousel-viewport">
+        <div class="carousel-track" id="carouselTrack">
+<div class="carousel-slide" data-slide="0">
+            <div class="carousel-shot">
+              <img src="fresh-deodorant.png" alt="RINGANA FRESH deodorant" loading="lazy" decoding="async" width="200" height="200">
+            </div>
+            <div class="carousel-copy">
+              <p class="radar-kicker">FRESH · Deodorant</p>
+              <p><strong>FRESH deodorant</strong> is a creamy water-in-oil emulsion that protects against odor without aluminium salts — while nourishing underarm skin with plant oils and natural moisturizers. An everyday essential on my early-access list.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Odour protection" data-ingredients="Zinc oxide, sodium bicarbonate (baking soda), rice husk water (Oryza sativa), and frankincense (Boswellia serrata)." data-why="Works with your skin's natural function instead of blocking sweat with aluminium — odour control plus care, which matters on skin you treat every single day.">Odour protection</button>
+                <button type="button" class="chip ingredient-chip" data-label="Nourishing care" data-ingredients="Sesame seed oil, shea/oat care complex, sage oil, and tea tree oil — plus other plant oils and butters in the water-in-oil emulsion." data-why="Underarm skin deserves the same ingredient scrutiny as anything else you use daily — especially if you shave or have sensitivity there.">Nourishing care</button>
+              </div>
+            </div>
+          </div>
+
+<div class="carousel-slide" data-slide="1">
+            <div class="carousel-shot">
+              <img src="fresh-hair-duo.png" alt="RINGANA FRESH volume shampoo and hair treatment" loading="lazy" decoding="async" width="200" height="200">
+            </div>
+            <div class="carousel-copy">
+              <p class="radar-kicker">FRESH · Hair Care</p>
+              <p><strong>FRESH volume shampoo and FRESH hair treatment</strong> are the duo I'm excited to test — microbiome-friendly cleansing paired with a leave-in treatment for body, shine, and manageable lengths.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Volume shampoo" data-ingredients="Ginseng, nettle, fermented rice water, and a mushroom extract complex (reishi, shiitake, chaga, and snow fungus)." data-why="Volume without heavy silicones that coat and wash away — the mushroom complex delivers moisture while ginseng and nettle support lift and scalp balance.">Volume shampoo</button>
+                <button type="button" class="chip ingredient-chip" data-label="Hair treatment" data-ingredients="Fermented rice water, mushroom extracts, and plant proteins in a versatile leave-in balm." data-why="Works on wet or dry hair as a leave-in or rinse-off mask — structural support and moisture that stays, especially on fine or brittle ends.">Hair treatment</button>
+              </div>
+            </div>
+          </div>
+
+<div class="carousel-slide" data-slide="2">
+            <div class="carousel-shot">
+              <img src="fresh-tooth-oil.png" alt="RINGANA FRESH tooth oil" loading="lazy" decoding="async" width="200" height="200">
+            </div>
+            <div class="carousel-copy">
+              <p class="radar-kicker">FRESH · Tooth Oil</p>
+              <p><strong>FRESH tooth oil</strong> is oil-pulling oral care — a sesame-oil formula you swish through your teeth before brushing. Not toothpaste with a different label: a whole different format built for gum care, fresh breath, and a clean mouthfeel without the usual foam-and-fillers routine.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Oil-pulling base" data-ingredients="Sesame seed oil (Sesamum indicum) as the carrier, with hydrated silica for a gentle polishing texture as you pull the oil through your teeth." data-why="Oil pulling isn't a gimmick here — the base has to bind residue and coat the mouth long enough to actually work. Sesame oil is the traditional carrier; silica gives it real clean, not just a slick feel.">Oil-pulling base</button>
+                <button type="button" class="chip ingredient-chip" data-label="Xylitol · mint · turmeric" data-ingredients="Xylitol for cavity-friendly oral care; Mentha arvensis leaf oil and menthol for that sharp clean breath; and Curcuma xanthorrhiza (Javanese turmeric) root extract — a distinctive turmeric species used for its cleansing oral-care actives." data-why="Most 'natural' tooth products stop at mint. This one pairs xylitol with a real turmeric extract — the combination that makes morning oil pulling feel purposeful, not just aromatic.">Xylitol · mint · turmeric</button>
+                <button type="button" class="chip ingredient-chip" data-label="Myrrh · manuka · clove" data-ingredients="Myrrh oil (Commiphora myrrha), manuka branch/leaf oil (Leptospermum scoparium), clove flower extract, eucalyptus and lemon peel oils, Spanish sage oil, plus soothing dipotassium glycyrrhizate and bisabolol." data-why="This is the part that separates tooth oil from a simple mint rinse — resinous myrrh, manuka, and clove for gum-focused care, with glycyrrhizate and bisabolol for comfort after a thorough pull.">Myrrh · manuka · clove</button>
+              </div>
+            </div>
+          </div>
+
+<div class="carousel-slide" data-slide="3">
+            <div class="carousel-shot">
+              <img src="caps-protect.png" alt="RINGANA CAPS protect antioxidant support" loading="lazy" decoding="async" width="200" height="200">
+            </div>
+            <div class="carousel-copy">
+              <p class="radar-kicker">CAPS · Antioxidant</p>
+              <p><strong>CAPS protect</strong> is antioxidant support built around targeted plant extracts — the kind of proactive daily protection I want in a clean capsule format.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Polypodium &amp; botanicals" data-ingredients="Polypodium leucotomos leaf extract, blood orange extract, green tea extract, and marigold (Tagetes) flower extract." data-why="These are the plant actives behind the antioxidant story — not a generic multivitamin dump.">Polypodium & botanicals</button>
+                <button type="button" class="chip ingredient-chip" data-label="Astaxanthin" data-ingredients="Astaxanthin from Haematococcus (blood rain algae) extract — a carotenoid antioxidant." data-why="Astaxanthin is one of the reasons this formula feels more intentional than a basic antioxidant blend.">Astaxanthin</button>
+                <button type="button" class="chip ingredient-chip" data-label="L-tyrosine &amp; copper" data-ingredients="L-tyrosine plus copper bisglycinate in a vegan capsule shell (hydroxypropyl methylcellulose)." data-why="I want the full picture on what's in the tin — including the supporting nutrients, not just the headline extract.">L-tyrosine & copper</button>
+              </div>
+            </div>
+          </div>
+
+<div class="carousel-slide" data-slide="4">
+            <div class="carousel-shot">
+              <img src="caps-beauty-hair.png" alt="RINGANA CAPS beauty &amp; hair" loading="lazy" decoding="async" width="200" height="200">
+            </div>
+            <div class="carousel-copy">
+              <p class="radar-kicker">CAPS · Beauty & Hair</p>
+              <p><strong>beauty & hair CAPS</strong> support hair and nails from within — L-carnosine, saw palmetto, hyaluronic acid, and plant extracts in a vegan capsule.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="L-carnosine · HA · saw palmetto" data-ingredients="L-carnosine, hyaluronic acid, and saw palmetto extract — core actives for hair, nails, and inner beauty support." data-why="When hair and nails are under stress, internal support is part of a complete clean routine.">L-carnosine · HA · saw palmetto</button>
+                <button type="button" class="chip ingredient-chip" data-label="Plant extracts" data-ingredients="Buckwheat germ powder, pea sprout extract, melon extract, cranberry extract, green tea extract, and sodium R-lipoate in a vegan capsule shell." data-why="I want beauty support that meets the same ingredient bar I hold for everything else I put in my body.">Plant extracts</button>
+              </div>
+            </div>
+          </div>
+
+<div class="carousel-slide" data-slide="5">
+            <div class="carousel-shot">
+              <img src="caps-d-gest.png" alt="RINGANA CAPS d-gest gut health" loading="lazy" decoding="async" width="200" height="200">
+            </div>
+            <div class="carousel-copy">
+              <p class="radar-kicker">CAPS · Gut Health</p>
+              <p><strong>d-gest CAPS</strong> combine a fermented enzyme complex with digestive botanicals — gut support that actually names what's inside.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Enzyme complex" data-ingredients="Fermented enzyme complex with amylase, lactase, protease, cellulase, and lipase — to help break down carbs, lactose, protein, fibre, and fats." data-why="If digestion is off, everything else feels harder. Enzymes are the practical core of this formula.">Enzyme complex</button>
+                <button type="button" class="chip ingredient-chip" data-label="Artichoke · milk thistle · ginger" data-ingredients="Artichoke leaf/flower extract, milk thistle phospholipid complex, fermented ginger extract, plus dandelion and gentian root extracts." data-why="These botanicals are why d-gest feels like more than a basic digestive enzyme bottle.">Artichoke · milk thistle · ginger</button>
+                <button type="button" class="chip ingredient-chip" data-label="Choline &amp; zinc" data-ingredients="Choline bitartrate and zinc bisglycinate, with papaya extract in a vegan capsule shell." data-why="Supporting nutrients matter for a formula I'm trusting as daily gut infrastructure.">Choline & zinc</button>
+              </div>
+            </div>
+          </div>
+
+<div class="carousel-slide" data-slide="6">
+            <div class="carousel-shot">
+              <img src="caps-moodoo.png" alt="RINGANA CAPS moodoo mood support" loading="lazy" decoding="async" width="200" height="200">
+            </div>
+            <div class="carousel-copy">
+              <p class="radar-kicker">CAPS · Mood Support</p>
+              <p><strong>moodoo CAPS</strong> support emotional balance and mental resilience with plant extracts, magnesium, biotin, folate, and B vitamins — especially during stressful seasons or hormonal shifts.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Plant extracts" data-ingredients="Orange peel extract, schisandra berry extract, ashwagandha root extract, green tea extract, cocoa seed extract, saffron extract, L-theanine, and buckwheat germ powder." data-why="A multi-pathway botanical blend — not a single hero ingredient — for calm, clarity, and emotional equilibrium over time.">Plant extracts</button>
+                <button type="button" class="chip ingredient-chip" data-label="Magnesium &amp; B vitamins" data-ingredients="Magnesium from seawater, biotin, folate, and B vitamins including B6 and B12." data-why="Magnesium, biotin, and folate contribute to normal psychological function; B6 and B12 support normal nervous system function — the nutritional backbone behind the botanicals.">Magnesium & B vitamins</button>
+                <button type="button" class="chip ingredient-chip" data-label="Daily resilience" data-ingredients="Formulated for emotional balance during stress, seasonal low moods, and hormonal shifts — three capsules a day in a vegan capsule shell." data-why="Recovery taught me that calm isn't optional — it's how I protect my energy as a sole provider and mom.">Daily resilience</button>
+              </div>
+            </div>
+          </div>
+
+<div class="carousel-slide" data-slide="7">
+            <div class="carousel-shot">
+              <img src="drinks-isi.png" alt="RINGANA isi calm juice shots" loading="lazy" decoding="async" width="200" height="200">
+            </div>
+            <div class="carousel-copy">
+              <p class="radar-kicker">DRINKS · Calm Mood Shots</p>
+              <p><strong>isi</strong> is the wind-down drink on my list — calming plant extracts in a functional shot format for evening rituals when I need to slow down on purpose.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Calming botanicals" data-ingredients="Passion flower extract, lemon balm leaf extract, ashwagandha root extract, hop blossom extract, and winter linden blossom extract." data-why="Evening wind-down has to be clean and intentional — these are the botanicals behind isi's calm positioning.">Calming botanicals</button>
+                <button type="button" class="chip ingredient-chip" data-label="L-tryptophan" data-ingredients="L-tryptophan — an essential amino acid the body converts into serotonin and melatonin, the messengers tied to mood and sleep rhythm." data-why="I want evening support that names what's inside — not a mystery 'relax blend.'">L-tryptophan</button>
+                <button type="button" class="chip ingredient-chip" data-label="Sour cherry extract" data-ingredients="Sour cherry extract, a natural source of melatonin, plus supporting plant extracts including green oat (gluten-free) and rooibos." data-why="A gentle cherry-forward shot that fits a real evening routine — not another stimulant before bed.">Sour cherry extract</button>
+              </div>
+            </div>
+          </div>
+
+<div class="carousel-slide" data-slide="8">
+            <div class="carousel-shot">
+              <img src="sport-protein.png" alt="RINGANA SPORT protein powder" loading="lazy" decoding="async" width="200" height="200">
+            </div>
+            <div class="carousel-copy">
+              <p class="radar-kicker">SPORT · Protein Powder</p>
+              <p><strong>SPORT protein</strong> (vegan & gluten free) delivers about 27 g of plant protein per sachet — clean fuel for building and maintaining muscle so I can show up stronger in midlife.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Pea · rice · flax protein" data-ingredients="Fermented pea protein isolate, rice protein isolate, and golden flaxseed powder — a complete plant-protein blend with all 20 proteinogenic amino acids." data-why="I want vegan protein with a real amino-acid profile — not a compromise shake with a mystery blend.">Pea · rice · flax protein</button>
+                <button type="button" class="chip ingredient-chip" data-label="Bacillus coagulans" data-ingredients="Probiotic Bacillus coagulans GBI-30 6086 to support protein digestion and uptake." data-why="Protein only helps if your body can use it — digestive support is part of why this formula earned a spot on my list.">Bacillus coagulans</button>
+                <button type="button" class="chip ingredient-chip" data-label="Vitamins &amp; minerals" data-ingredients="Buckwheat germ powder (B vitamins), acerola (vitamin C), vitamin D3 from algae, plus magnesium and calcium citrates." data-why="Strength training needs more than protein alone — energy metabolism and muscle function support matter too.">Vitamins & minerals</button>
+              </div>
+            </div>
+          </div>
+
+<div class="carousel-slide" data-slide="9">
+            <div class="carousel-shot">
+              <img src="sport-endurance.png" alt="RINGANA SPORT endurance &amp; performance" loading="lazy" decoding="async" width="200" height="200">
+            </div>
+            <div class="carousel-copy">
+              <p class="radar-kicker">SPORT · Endurance & Performance</p>
+              <p><strong>SPORT endurance</strong> is an isotonic carbohydrate-electrolyte drink for training — fast and complex carbs for energy, plus minerals that support muscle function and fluid balance.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Fast &amp; complex carbs" data-ingredients="A mix of complex carbohydrates (including maltodextrin and soluble waxy maize starch) and simpler carbs (dextrose plus fruit sugars) for both immediate and longer-lasting energy." data-why="During longer sessions I need fuel that kicks in and keeps going — not a sugar spike and crash.">Fast & complex carbs</button>
+                <button type="button" class="chip ingredient-chip" data-label="Electrolytes" data-ingredients="Magnesium, calcium, potassium, and selenium — minerals that support electrolyte balance, muscle function, and cell protection under training stress." data-why="Sweat costs minerals. Replacing them is part of training with intention, not just pushing harder.">Electrolytes</button>
+                <button type="button" class="chip ingredient-chip" data-label="Betaine" data-ingredients="Betaine to help cells maintain water balance under osmotic stress from fluid loss during intense training." data-why="Endurance is capacity — cellular hydration support belongs in that conversation.">Betaine</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="carousel-btn next" aria-label="Next product">&#8250;</button>
+      <p class="chip-hint">Tap + on any chip for ingredients and why they matter</p>
+      <div class="carousel-footer">
+        <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Choose product"></div>
+        <span class="carousel-counter" id="carouselCounter" aria-live="polite">1 / 10</span>
+      </div>
+    </div>
+<p class="radar-foot reveal">Plenty more where these came from. As early-access products land in my hands, I'll share first impressions, ingredient breakdowns, and who each one is actually for — straight to the founding list.</p>
+    <p class="reveal" style="text-align:center;margin-top:1.8rem;"><a href="#" class="btn btn-brass" data-open-connect>Join the Founding List</a> <a href="https://instagram.com/aprettybalance" class="btn btn-pine" target="_blank" rel="noopener">Message Me on Instagram</a></p>
+  </div>
+</section>
+
+<div class="ingredient-popup" id="ingredientPopup" role="dialog" aria-labelledby="ingredientPopupLabel" aria-hidden="true">
+  <button class="ingredient-popup-close" type="button" aria-label="Close">&times;</button>
+  <p class="ingredient-popup-label" id="ingredientPopupLabel"></p>
+  <h4 id="ingredientPopupIngredientsHeading">What's inside</h4>
+  <div id="ingredientPopupIngredients"></div>
+  <div class="ingredient-popup-why-block" id="ingredientPopupWhyBlock">
+    <h4>Why it matters</h4>
+    <p id="ingredientPopupWhy"></p>
+  </div>
+</div>
+
+<!-- CLIENT:END page-products -->
+
+<!-- CLIENT:START connect-modal -->
+<div class="connect-modal" id="connectModal" aria-hidden="true" role="dialog" aria-labelledby="connectModalTitle">
+  <div class="connect-modal-backdrop" data-close-connect></div>
+  <div class="connect-modal-panel letter-panel">
+    <button class="connect-modal-close" type="button" aria-label="Close" data-close-connect>&times;</button>
+    <div class="letter-paper">
+      <header class="letter-head">
+        <h2 id="connectModalTitle" class="letter-salutation">friend,</h2>
+      </header>
+      <div class="letter-body-copy">
+        <p>I'll email you when Ringana arrives — the launch date, my honest first impressions, and first pick if you want to build this alongside me.</p>
+      </div>
+      <div class="letter-form" id="kit-form-modal">
+        <script async data-uid="e0610cb655" src="https://exceptional-founder-5604.kit.com/e0610cb655/index.js"></script>
+      </div>
+      <p class="letter-sign">— Kathryn</p>
+      <p class="modal-fine">No spam, ever. Just the good stuff, and only until you say otherwise.</p>
+    </div>
+  </div>
+</div>
+<!-- CLIENT:END connect-modal -->
+
+<!-- CLIENT:START footer -->
+<footer>
+  <p class="foot-brand">Ringana <span>·</span> with Kathryn</p>
+  <p class="foot-cta">Questions before launch? DM on socials — I read every message.</p>
+  <div class="foot-social-icons">
+    <a href="https://instagram.com/aprettybalance" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0 1.441c-3.151 0-3.502.012-4.735.069-2.212.101-3.248 1.155-3.35 3.35-.057 1.232-.069 1.573-.069 4.735s.012 3.503.069 4.735c.102 2.195 1.14 3.25 3.35 3.35 1.233.057 1.584.069 4.735.069s3.502-.012 4.734-.069c2.21-.1 3.248-1.155 3.35-3.35.058-1.232.07-1.573.07-4.735s-.012-3.503-.07-4.735c-.102-2.195-1.14-3.249-3.35-3.35-1.232-.057-1.583-.069-4.734-.069zm0 2.882a5.514 5.514 0 1 1 0 11.028 5.514 5.514 0 0 1 0-11.028zm0 1.441a4.073 4.073 0 1 0 0 8.146 4.073 4.073 0 0 0 0-8.146zm6.406-2.845a1.288 1.288 0 1 1-2.577 0 1.288 1.288 0 0 1 2.577 0z"/></svg></a>
+    <a href="https://facebook.com/katjarrett" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg></a>
+  </div>
+  <p class="foot-legal">Kathryn is an independent Ringana Fresh Partner (pending U.S. launch). This is a personal page and is not an official Ringana corporate website. Product details reflect Ringana's current international lineup; the U.S. offering will be confirmed at launch. These statements have not been evaluated by the FDA; products are not intended to diagnose, treat, cure, or prevent any disease.</p>
+  <p class="foot-copy">&copy; 2026 Kathryn · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
+</footer>
+<!-- CLIENT:END footer -->
+
+<script>
+/* CORE:START js */
+const siteHeader=document.getElementById('siteHeader');
+let headerTicking=false;
+
+function measureExpandedHeader(){
+  if(!siteHeader)return;
+  const wasScrolled=siteHeader.classList.contains('is-scrolled');
+  siteHeader.classList.remove('is-scrolled');
+  document.documentElement.style.setProperty('--header-expanded',siteHeader.offsetHeight+'px');
+  if(wasScrolled)siteHeader.classList.add('is-scrolled');
+  document.documentElement.style.setProperty('--header-offset',siteHeader.offsetHeight+'px');
+}
+
+function updateSiteHeader(){
+  if(!siteHeader)return;
+  const y=window.scrollY;
+  if(siteHeader.classList.contains('is-scrolled')){
+    if(y<32)siteHeader.classList.remove('is-scrolled');
+  }else if(y>72){
+    siteHeader.classList.add('is-scrolled');
+  }
+  document.documentElement.style.setProperty('--header-offset',siteHeader.offsetHeight+'px');
+}
+
+measureExpandedHeader();
+window.addEventListener('resize',measureExpandedHeader);
+window.addEventListener('scroll',()=>{
+  if(headerTicking)return;
+  headerTicking=true;
+  requestAnimationFrame(()=>{
+    updateSiteHeader();
+    headerTicking=false;
+  });
+},{passive:true});
+
+// Ingredient chip popups
+const ingredientPopup=document.getElementById('ingredientPopup');
+const ingredientLabel=document.getElementById('ingredientPopupLabel');
+const ingredientList=document.getElementById('ingredientPopupIngredients');
+const ingredientWhy=document.getElementById('ingredientPopupWhy');
+const ingredientWhyBlock=document.getElementById('ingredientPopupWhyBlock');
+const ingredientIngredientsHeading=document.getElementById('ingredientPopupIngredientsHeading');
+let activeChip=null;
+
+function closeIngredientPopup(){
+  if(!ingredientPopup)return;
+  ingredientPopup.classList.remove('open');
+  ingredientPopup.setAttribute('aria-hidden','true');
+  activeChip?.classList.remove('is-active');
+  activeChip=null;
+}
+
+function openIngredientPopup(chip){
+  if(!ingredientPopup||!chip)return;
+  activeChip?.classList.remove('is-active');
+  activeChip=chip;
+  chip.classList.add('is-active');
+  ingredientLabel.textContent=chip.dataset.label||'';
+  const ing=chip.dataset.ingredients||'';
+  const why=chip.dataset.why||'';
+  const isList=chip.dataset.list==='true';
+  ingredientList.innerHTML='';
+  if(isList){
+    ingredientIngredientsHeading.textContent='The lineup';
+    const ul=document.createElement('ul');
+    ing.split('•').map(s=>s.trim()).filter(Boolean).forEach(item=>{
+      const li=document.createElement('li');
+      li.textContent=item;
+      ul.appendChild(li);
+    });
+    ingredientList.appendChild(ul);
+    ingredientWhyBlock.hidden=true;
+  }else{
+    ingredientIngredientsHeading.textContent="What's inside";
+    const p=document.createElement('p');
+    p.textContent=ing;
+    p.style.marginBottom=why?'.85rem':'0';
+    ingredientList.appendChild(p);
+    if(why){
+      ingredientWhy.textContent=why;
+      ingredientWhyBlock.hidden=false;
+    }else{
+      ingredientWhy.textContent='';
+      ingredientWhyBlock.hidden=true;
+    }
+  }
+  ingredientPopup.classList.add('open');
+  ingredientPopup.setAttribute('aria-hidden','false');
+  const rect=chip.getBoundingClientRect();
+  const popW=ingredientPopup.offsetWidth||380;
+  const popH=ingredientPopup.offsetHeight||280;
+  let top=rect.bottom+10;
+  let left=rect.left;
+  if(left+popW>window.innerWidth-12)left=window.innerWidth-popW-12;
+  if(left<12)left=12;
+  if(top+popH>window.innerHeight-12)top=rect.top-popH-10;
+  if(top<12)top=12;
+  ingredientPopup.style.top=top+'px';
+  ingredientPopup.style.left=left+'px';
+}
+
+document.querySelectorAll('.ingredient-chip').forEach(chip=>{
+  chip.addEventListener('click',e=>{
+    e.stopPropagation();
+    if(chip===activeChip)closeIngredientPopup();
+    else openIngredientPopup(chip);
+  });
+});
+ingredientPopup?.querySelector('.ingredient-popup-close')?.addEventListener('click',closeIngredientPopup);
+document.addEventListener('click',e=>{
+  if(ingredientPopup?.classList.contains('open')&&!e.target.closest('.ingredient-chip')&&!e.target.closest('.ingredient-popup'))closeIngredientPopup();
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&ingredientPopup?.classList.contains('open'))closeIngredientPopup();
+});
+
+// Product carousel
+const carouselTrack=document.getElementById('carouselTrack');
+const carouselDots=document.getElementById('carouselDots');
+const carouselCounter=document.getElementById('carouselCounter');
+const carouselEl=document.getElementById('radarCarousel');
+const carouselViewport=carouselEl?.querySelector('.carousel-viewport');
+const slides=carouselTrack?[...carouselTrack.querySelectorAll('.carousel-slide')]:[];
+let slideIndex=0;
+let carouselTimer=null;
+const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const CAROUSEL_MS=6500;
+
+function setCarouselPosition(animate=true){
+  if(!carouselTrack||!carouselViewport||!slides.length)return;
+  const offset=carouselViewport.offsetWidth*slideIndex;
+  if(!animate)carouselTrack.style.transition='none';
+  carouselTrack.style.transform=`translateX(-${offset}px)`;
+  if(!animate){
+    carouselTrack.offsetHeight;
+    carouselTrack.style.transition='';
+  }
+}
+
+function goToSlide(i){
+  if(!slides.length)return;
+  slideIndex=(i+slides.length)%slides.length;
+  setCarouselPosition();
+  carouselDots?.querySelectorAll('.carousel-dot').forEach((dot,j)=>{
+    dot.classList.toggle('active',j===slideIndex);
+    dot.setAttribute('aria-selected',j===slideIndex?'true':'false');
+  });
+  if(carouselCounter)carouselCounter.textContent=`${slideIndex+1} / ${slides.length}`;
+}
+
+function nextSlide(){goToSlide(slideIndex+1);}
+function prevSlide(){goToSlide(slideIndex-1);}
+
+function startCarousel(){
+  if(reduceMotion||slides.length<2)return;
+  clearInterval(carouselTimer);
+  carouselTimer=setInterval(nextSlide,CAROUSEL_MS);
+}
+function pauseCarousel(){clearInterval(carouselTimer);}
+
+if(slides.length){
+  slides.forEach((_,i)=>{
+    const dot=document.createElement('button');
+    dot.type='button';
+    dot.className='carousel-dot'+(i===0?' active':'');
+    dot.setAttribute('role','tab');
+    dot.setAttribute('aria-label',`Product ${i+1}`);
+    dot.setAttribute('aria-selected',i===0?'true':'false');
+    dot.addEventListener('click',()=>{goToSlide(i);startCarousel();});
+    carouselDots?.appendChild(dot);
+  });
+  carouselEl?.querySelector('.carousel-btn.next')?.addEventListener('click',()=>{nextSlide();startCarousel();});
+  carouselEl?.querySelector('.carousel-btn.prev')?.addEventListener('click',()=>{prevSlide();startCarousel();});
+  carouselEl?.addEventListener('mouseenter',pauseCarousel);
+  carouselEl?.addEventListener('mouseleave',startCarousel);
+  carouselEl?.addEventListener('focusin',pauseCarousel);
+  carouselEl?.addEventListener('focusout',e=>{
+    if(!carouselEl.contains(e.relatedTarget))startCarousel();
+  });
+  goToSlide(0);
+  startCarousel();
+
+  let resizeTimer;
+  window.addEventListener('resize',()=>{
+    clearTimeout(resizeTimer);
+    resizeTimer=setTimeout(()=>goToSlide(slideIndex),100);
+  });
+
+  // Touch swipe
+  let touchStartX=0;
+  let touchDelta=0;
+  carouselViewport?.addEventListener('touchstart',e=>{
+    touchStartX=e.changedTouches[0].clientX;
+    touchDelta=0;
+    pauseCarousel();
+  },{passive:true});
+  carouselViewport?.addEventListener('touchmove',e=>{
+    touchDelta=e.changedTouches[0].clientX-touchStartX;
+  },{passive:true});
+  carouselViewport?.addEventListener('touchend',()=>{
+    if(Math.abs(touchDelta)>50){
+      if(touchDelta<0)nextSlide();
+      else prevSlide();
+    }
+    startCarousel();
+  },{passive:true});
+}
+
+// Subnav active state on scroll
+const subnavLinks=document.querySelectorAll('.page-subnav a');
+const subnavSections=[...subnavLinks].map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+if(subnavLinks.length&&subnavSections.length){
+  const subIo=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        const id='#'+e.target.id;
+        subnavLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')===id));
+      }
+    });
+  },{rootMargin:'-40% 0px -50% 0px',threshold:0});
+  subnavSections.forEach(s=>subIo.observe(s));
+}
+
+const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const connectModal=document.getElementById('connectModal');
+function setConnectOpen(open){
+  if(!connectModal)return;
+  connectModal.classList.toggle('open',open);
+  connectModal.setAttribute('aria-hidden',open?'false':'true');
+  document.body.classList.toggle('nav-open',open);
+}
+document.querySelectorAll('[data-open-connect]').forEach(el=>{
+  el.addEventListener('click',e=>{e.preventDefault();setConnectOpen(true);});
+});
+connectModal?.querySelectorAll('[data-close-connect]').forEach(el=>{
+  el.addEventListener('click',()=>setConnectOpen(false));
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&connectModal?.classList.contains('open'))setConnectOpen(false);
+});
+/* CORE:END js */
+</script>
+</body>
+</html>

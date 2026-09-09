@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- CLIENT:START head -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Roxanne — Ringana with Roxanne</title>
+<meta name="description" content="Roxanne's journey from nine years in clean beauty to Ringana's U.S. founding team. Freshness, wellness, and whole-body integrity.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About Roxanne — Ringana with Roxanne">
+<meta property="og:description" content="Nine years in clean beauty. Nearly $700K in personal sales. Now building Ringana's American founding team.">
+<meta property="og:image" content="og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About Roxanne — Ringana with Roxanne">
+<meta name="twitter:description" content="Nine years in clean beauty. Nearly $700K in personal sales. Now building Ringana's American founding team.">
+<meta name="twitter:image" content="og-image.jpg">
+<link rel="preload" as="image" href="roxanne-portrait.jpg">
+<meta name="theme-color" content="#6e8978">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- CLIENT:END head -->
+<style>
+/* CLIENT:START theme */
+:root{
+  --pine:#6e8978;
+  --pine-deep:#5a7364;
+  --linen:#F6F3EC;
+  --linen-warm:#ECE4DA;
+  --brass:#c4a4a9;
+  --brass-light:#d6bbc0;
+  --sage:#a8bdb0;
+  --ink:#36302A;
+  --brown:#36302A;
+  --tan:#ECE4DA;
+  --cream:#F6F3EC;
+  --white:#F6F3EC;
+  --header-expanded:7.5rem;
+  --header-offset:7.5rem;
+}
+/* CLIENT:END theme */
+/* CORE:START css */
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Work Sans',sans-serif;font-weight:300;color:var(--ink);background:var(--linen);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased;}
+body::before{
+  content:'';
+  position:fixed;inset:0;
+  pointer-events:none;z-index:9998;opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size:180px 180px;
+}
+body.nav-open{overflow:hidden;}
+h1,h2,h3,.serif{font-family:'Fraunces',serif;font-weight:400;line-height:1.15;}
+a{color:inherit;}
+a:focus-visible,button:focus-visible{outline:2px solid var(--brass-light);outline-offset:3px;}
+
+.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(110,137,120,0.95);
+  padding:1.35rem 2rem 1rem;
+  transition:padding .35s ease,background .35s ease,box-shadow .35s ease;
+}
+.site-header.is-scrolled{
+  padding:.8rem 2rem;
+  background:rgba(90,115,100,.98);
+  box-shadow:0 4px 24px rgba(0,0,0,.18);
+}
+.site-header-inner{
+  max-width:1060px;margin:0 auto;
+  display:flex;flex-direction:column;align-items:center;gap:.9rem;
+  transition:gap .35s ease;
+}
+.site-header.is-scrolled .site-header-inner{
+  flex-direction:row;justify-content:space-between;align-items:center;gap:1.25rem;
+}
+.site-brand{
+  font-family:'Fraunces',serif;
+  color:var(--linen);
+  font-size:clamp(1.15rem,3vw,1.6rem);
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  text-decoration:none;
+  white-space:nowrap;
+  line-height:1.2;
+  transition:font-size .35s ease,letter-spacing .35s ease;
+}
+.site-brand span{color:var(--brass-light);}
+.site-header.is-scrolled .site-brand{
+  font-size:clamp(.82rem,2.2vw,1rem);
+  letter-spacing:.14em;
+}
+.site-nav{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:1.2rem 2rem;
+  transition:gap .35s ease;
+}
+.site-header.is-scrolled .site-nav{justify-content:flex-end;gap:.85rem 1.15rem;}
+.site-nav .nav-about{margin-left:0;transition:margin-left .35s ease;}
+.site-header.is-scrolled .site-nav .nav-about{margin-left:.85rem;}
+.site-nav a{color:var(--linen);text-decoration:none;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;font-weight:400;opacity:.85;transition:opacity .2s,color .2s;}
+.site-nav a:hover{opacity:1;color:var(--brass-light);}
+.site-nav a.active{opacity:1;color:var(--brass-light);}
+.nav-cta{border:1px solid var(--brass-light);padding:.45rem 1.15rem;border-radius:2px;color:var(--brass-light) !important;opacity:1 !important;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;transition:background .2s,color .2s,opacity .35s ease,max-width .35s ease,padding .35s ease,margin .35s ease,border-color .35s ease,visibility 0s;}
+.nav-cta:hover{background:var(--brass-light);color:var(--pine) !important;}
+.nav-cta-scroll{max-width:0;padding-left:0;padding-right:0;margin-left:0;border-color:transparent;opacity:0;visibility:hidden;overflow:hidden;pointer-events:none;}
+.site-header.is-scrolled .nav-cta-scroll{max-width:11rem;padding:.45rem 1.15rem;margin-left:1rem;border-color:var(--brass-light);opacity:1;visibility:visible;pointer-events:auto;}
+
+.page-hero{background:linear-gradient(168deg,var(--pine-deep) 0%,var(--pine) 60%,#7f9b8a 100%);color:var(--linen);padding:calc(var(--header-expanded) + 3rem) 2rem 5rem;position:relative;overflow:hidden;}
+.page-hero::after{content:'';position:absolute;right:-14vw;top:-16vh;width:52vw;height:52vw;max-width:700px;max-height:700px;border:1px solid rgba(207,169,94,.16);border-radius:50%;pointer-events:none;}
+.page-hero-inner{max-width:1060px;margin:0 auto;position:relative;z-index:2;}
+.hero-eyebrow{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brass-light);font-weight:500;margin-bottom:1.4rem;display:flex;align-items:center;gap:.9rem;}
+.hero-eyebrow::before{content:'';width:36px;height:1px;background:var(--brass-light);}
+.page-hero h1{font-size:clamp(2.4rem,5.4vw,4rem);font-weight:300;margin-bottom:1.4rem;max-width:16ch;}
+.page-hero h1 em{font-style:italic;color:var(--brass-light);}
+.page-hero p{font-size:clamp(1.02rem,1.5vw,1.2rem);max-width:56ch;opacity:.88;}
+
+section{padding:5.5rem 2rem;}
+.container{max-width:1060px;margin:0 auto;}
+.eyebrow{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-bottom:1rem;}
+.section-title{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:400;margin-bottom:1.3rem;max-width:24ch;}
+.lede{font-size:1.12rem;max-width:62ch;margin-bottom:1.6rem;}
+
+.btn{display:inline-block;padding:.95rem 2.4rem;font-family:'Work Sans',sans-serif;font-size:.82rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;border-radius:1px;transition:transform .22s ease,box-shadow .22s ease,background .22s ease;border:1px solid transparent;cursor:pointer;}
+.btn-brass{background:linear-gradient(160deg,#d4bcc0 0%,var(--brass) 50%,#a8888e 100%);color:var(--white);box-shadow:0 2px 0 rgba(0,0,0,.14),0 6px 20px rgba(196,164,169,.3);}
+.btn-brass:hover{background:linear-gradient(160deg,#e0cbce 0%,var(--brass-light) 55%,var(--brass) 100%);transform:translateY(-2px);box-shadow:0 3px 0 rgba(0,0,0,.1),0 10px 28px rgba(196,164,169,.38);}
+.btn-pine{background:var(--pine);color:var(--linen);box-shadow:0 4px 16px rgba(110,137,120,.2);}
+.btn-pine:hover{background:var(--pine-deep);transform:translateY(-2px);}
+.btn-row{display:flex;flex-direction:column;align-items:center;gap:1.15rem;margin-top:2rem;}
+.btn-row .btn{min-width:min(100%,300px);text-align:center;}
+
+/* Story layout */
+.story-intro{display:grid;grid-template-columns:minmax(220px,280px) 1fr;gap:2.8rem;align-items:start;}
+.about-photo-wrap{position:relative;max-width:280px;margin-top:.25rem;}
+.about-photo{position:relative;aspect-ratio:4/5;max-height:340px;border-radius:2px;overflow:hidden;background:var(--linen-warm);box-shadow:0 8px 24px rgba(110,137,120,.08);}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;display:block;}
+.about-photo.portrait img{object-position:50% 12%;}
+.about-photo.family{
+  aspect-ratio:4/3;
+  max-height:none;
+}
+.about-photo.family img{object-position:50% 35%;}
+.story-intro-copy p{margin-bottom:1.2rem;max-width:62ch;}
+.story-intro p{margin-bottom:1.2rem;max-width:54ch;}
+.origin-split{display:grid;grid-template-columns:1fr minmax(220px,340px);gap:3rem;align-items:center;}
+.photo-break{
+  display:grid;
+  grid-template-columns:120px 1fr;
+  gap:2rem;
+  margin-top:2.8rem;
+  align-items:start;
+}
+.photo-break .about-photo{
+  grid-column:2;
+  max-width:min(100%,480px);
+  max-height:none;
+  aspect-ratio:4/3;
+  margin:0;
+}
+@media (max-width:720px){
+  .origin-split{grid-template-columns:1fr;gap:1.8rem;}
+  .photo-break{grid-template-columns:1fr;}
+  .photo-break .about-photo{grid-column:1;}
+}
+.pull{font-family:'Fraunces',serif;font-style:italic;font-size:1.3rem;color:var(--pine);border-left:2px solid var(--brass);padding-left:1.3rem;margin:2rem 0;line-height:1.4;max-width:48ch;}
+
+/* Chapters */
+.chapters{background:var(--linen-warm);}
+.chapter{display:grid;grid-template-columns:120px 1fr;gap:2rem;padding:2.4rem 0;border-top:1px solid #d9cfc3;align-items:start;}
+.chapter:first-child{border-top:none;padding-top:0;}
+.chapter-num{font-family:'Fraunces',serif;font-size:2.4rem;color:var(--brass);line-height:1;opacity:.7;}
+.chapter h3{font-size:1.25rem;margin-bottom:.6rem;}
+.chapter p{font-size:.98rem;max-width:58ch;margin-bottom:.8rem;}
+
+/* Origin + health journey */
+.origin p{margin-bottom:1.1rem;max-width:62ch;}
+
+/* Right fit */
+.right-fit{background:var(--pine);color:var(--linen);}
+.right-fit .eyebrow{color:var(--brass-light);}
+.right-fit .section-title{color:var(--linen);max-width:28ch;}
+.right-fit .lede{opacity:.9;}
+.fit-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;margin-top:2.5rem;align-items:start;}
+.fit-callout{
+  border-left:3px solid var(--brass-light);
+  padding:0 0 0 2rem;
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-size:1.35rem;
+  line-height:1.45;
+  color:var(--brass-light);
+}
+.fit-list p{margin-bottom:1rem;opacity:.9;max-width:52ch;}
+.fit-list p:last-child{margin-bottom:0;}
+
+/* Why build */
+.why-build{background:var(--white);}
+.why-roxanne{
+  margin-top:2rem;
+  padding:2.2rem 2rem;
+  background:var(--linen-warm);
+  border-left:3px solid var(--brass);
+  border-radius:2px;
+  max-width:68ch;
+}
+.why-roxanne h3{font-size:1.25rem;margin-bottom:.9rem;color:var(--pine);}
+.why-roxanne p{margin-bottom:.9rem;max-width:62ch;}
+.why-roxanne p:last-child{margin-bottom:0;}
+
+/* CTA */
+.cta-band{background:var(--white);text-align:center;}
+.cta-band .section-title{margin-left:auto;margin-right:auto;}
+.cta-band .lede{margin-left:auto;margin-right:auto;}
+
+/* Letter modal */
+.connect-modal{position:fixed;inset:0;z-index:10000;display:flex;align-items:center;justify-content:center;padding:1.4rem;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .25s ease,visibility .25s ease;}
+.connect-modal.open{opacity:1;visibility:visible;pointer-events:auto;}
+.connect-modal-backdrop{position:absolute;inset:0;background:rgba(90,115,100,.65);}
+.connect-modal-panel.letter-panel{position:relative;z-index:2;width:min(100%,560px);max-height:min(92dvh,820px);overflow:auto;background:transparent;border:none;box-shadow:none;padding:0;}
+.connect-modal-close{position:absolute;top:.6rem;right:.8rem;z-index:3;background:rgba(255,255,255,.7);border:1px solid #d9cfc3;border-radius:50%;font-size:1.5rem;line-height:1;color:var(--pine);cursor:pointer;width:2.2rem;height:2.2rem;display:flex;align-items:center;justify-content:center;}
+.letter-paper{background:linear-gradient(175deg,#F6F3EC 0%,#ECE4DA 100%);border:1px solid #d9cfc3;border-radius:2px;padding:2.8rem 2.6rem 2.4rem;box-shadow:0 24px 60px rgba(110,137,120,.24),inset 0 1px 0 rgba(255,255,255,.85);position:relative;}
+.letter-paper::before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.05;pointer-events:none;border-radius:2px;}
+.letter-head,.letter-body-copy,.letter-form,.letter-sign,.modal-fine{position:relative;z-index:1;}
+.letter-salutation{font-family:'Caveat',cursive;font-size:2.4rem;font-weight:500;margin-bottom:.6rem;color:var(--pine);line-height:1.1;transform:rotate(-.8deg);transform-origin:left center;}
+.letter-body-copy p{font-family:'Caveat',cursive;font-size:1.45rem;line-height:1.55;margin-bottom:1.2rem;max-width:48ch;color:var(--ink);}
+.letter-sign{font-family:'Caveat',cursive;margin-top:1.4rem;color:var(--pine);font-size:1.75rem;font-weight:500;transform:rotate(-1.2deg);transform-origin:left center;}
+.modal-fine{font-size:.75rem;opacity:.55;margin-top:1.2rem;text-align:left;}
+
+footer{background:var(--brown);color:var(--linen);padding:3rem 2rem 2.2rem;text-align:center;}
+.foot-brand{font-family:'Fraunces',serif;letter-spacing:.14em;text-transform:uppercase;font-size:1rem;margin-bottom:.8rem;}
+.foot-brand span{color:var(--brass-light);}
+.foot-cta{
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-size:1.02rem;
+  opacity:.82;
+  margin-bottom:1.1rem;
+  max-width:48ch;
+  margin-left:auto;
+  margin-right:auto;
+}
+.foot-cta a{color:var(--brass-light);text-decoration:none;border-bottom:1px solid rgba(207,169,94,.35);}
+.foot-cta a:hover{opacity:1;border-bottom-color:var(--brass-light);}
+footer p{font-size:.8rem;opacity:.6;max-width:70ch;margin:0 auto .5rem;}
+.foot-social{margin:1.2rem 0;}
+.foot-social a{color:var(--linen);text-decoration:none;font-size:.85rem;letter-spacing:.08em;margin:0 .9rem;opacity:.8;}
+.foot-social a:hover{opacity:1;color:var(--brass-light);}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.visible{opacity:1;transform:none;}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}.reveal{opacity:1;transform:none;transition:none;}}
+
+@media (max-width:880px){
+  .site-header{padding:1rem .9rem .9rem;}
+  .site-header.is-scrolled{padding:.85rem .9rem;}
+  .site-header.is-scrolled .site-header-inner{
+    flex-direction:column;
+    align-items:center;
+    gap:.65rem;
+  }
+  .site-brand{font-size:1.02rem;letter-spacing:.12em;text-align:center;width:100%;padding-right:.12em;}
+  .site-header.is-scrolled .site-brand{font-size:.92rem;letter-spacing:.1em;width:100%;}
+  .site-nav{gap:.15rem .2rem;justify-content:center;width:100%;}
+  .site-header.is-scrolled .site-nav{justify-content:center;gap:.15rem .2rem;width:100%;}
+  .site-nav a{
+    font-size:.68rem;
+    letter-spacing:.06em;
+    padding:.55rem .7rem;
+    opacity:.95;
+  }
+  .site-header.is-scrolled .site-nav .nav-about{margin-left:0;}
+  .nav-cta{padding:.6rem 1.05rem;font-size:.68rem;letter-spacing:.07em;}
+  .site-header.is-scrolled .nav-cta-scroll{
+    max-width:14rem;
+    padding:.6rem 1.05rem;
+    margin-left:0;
+    margin-top:.1rem;
+    font-size:.68rem;
+  }
+  .story-intro,.fit-grid{grid-template-columns:1fr;gap:2.4rem;}
+  .about-photo-wrap{max-width:240px;margin:0 auto;}
+  .chapter{grid-template-columns:72px 1fr;gap:1.2rem;}
+}
+@media (max-width:640px){
+  section{padding:4rem 1.4rem;}
+  .page-hero{padding:calc(var(--header-expanded) + 2rem) 1.4rem 3.6rem;}
+  .site-header{padding:.95rem .85rem .85rem;}
+  .site-nav a{font-size:.66rem;padding:.55rem .55rem;}
+}
+
+.letter-form{margin-top:1.1rem;}
+.letter-text-cta{
+  display:inline-block;
+  width:100%;
+  max-width:100%;
+  text-align:center;
+  box-sizing:border-box;
+}
+.letter-text-cta:hover{transform:translateY(-2px);}
+footer .foot-copy a,footer .foot-legal a{color:var(--brass-light);text-decoration:none;border-bottom:1px solid rgba(207,169,94,.35);}
+footer .foot-copy a:hover,footer .foot-legal a:hover{border-bottom-color:var(--brass-light);}
+footer .foot-legal{max-width:78ch;}
+.letter-join-consent{display:flex;align-items:flex-start;gap:.55rem;margin:.15rem 0 0;font-size:.78rem;line-height:1.45;opacity:.78;text-align:left;font-family:'Work Sans',system-ui,sans-serif;}
+.letter-join-consent input{margin-top:.2rem;flex:0 0 auto;}
+.letter-join-consent a{color:var(--brass);text-decoration:underline;}
+/* CORE:END css */
+</style>
+</head>
+<body>
+
+<!-- CLIENT:START site-header -->
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
+    <a href="index.html" class="site-brand">Ringana <span>·</span> with Roxanne</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="products.html">The Products</a>
+      <a href="business.html">The Business</a>
+      <a href="about.html" class="nav-about active">About Me</a>
+      <a href="#" class="nav-cta nav-cta-scroll" data-open-connect>Get First Access</a>
+    </nav>
+  </div>
+</header>
+<!-- CLIENT:END site-header -->
+<!-- CLIENT:START page-about -->
+
+<header class="page-hero">
+  <div class="page-hero-inner">
+    <div class="hero-eyebrow">About Me</div>
+    <h1>A bigger vision for freshness, wellness, and <em>beauty.</em></h1>
+    <p>Nine years in clean beauty taught me what trust looks like — and what happens when your life expands beyond the bathroom counter. This is the story of how I got here, and why Ringana is the next chapter.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="story-intro reveal">
+      <div class="about-photo-wrap">
+        <div class="about-photo portrait">
+          <img src="roxanne-portrait.jpg" alt="Roxanne" fetchpriority="high" decoding="async" width="720" height="900">
+        </div>
+      </div>
+      <div class="story-intro-copy">
+        <p class="eyebrow">The Short Version</p>
+        <h2 class="section-title">Hi, I'm Roxanne.</h2>
+        <p>I'm the woman behind Mindful Living and <a href="https://instagram.com/mindfullivingrox" target="_blank" rel="noopener">@mindfullivingrox</a> — wife, mama to two girls and one boy, dog mom, chicken keeper to 33 feathered freeloaders, holistic-living enthusiast, and the whole-body wellness bestie who will absolutely turn your shampoo bottle around and read the ingredient label with you.</p>
+        <p>For the past sixteen years, I've been learning how to lessen the everyday burden on our bodies without making healthy living feel stressful, extreme, or impossible.</p>
+        <div class="pull">Because wellness should support your life — not take it over.</div>
+        <p>For the last nine years, I've also built a full-time clean beauty network marketing business from the ground up.</p>
+        <p>Nearly $700,000 in personal sales. Nearly $11 Million in team sales. Tens of Thousands of customers served. Countless ingredient labels studied. More late-night shade-matching and skincare routine recommendation messages than I could ever count.</p>
+        <p>Ingredient labels became my love language and apparently, questionable preservatives became my personal nemesis.</p>
+        <p>I have spent years helping people understand what is in their products, why it matters, and how to make realistic swaps that work for their homes, their families, and their budgets.</p>
+        <p>I don't recommend something simply because it is trending, beautifully packaged, or labeled “clean.”</p>
+        <p>I ask questions. I read the fine print. I look beyond the marketing.</p>
+        <p>And I will never recommend something to another woman that I would not feel comfortable using in my own home or on my own family.</p>
+        <div class="pull">But here is the part most people don't always see: Even after reaching the top, I was never going to stop looking for better.</div>
+        <p>My loyalty has always been to the men and women who trust me — not to staying comfortable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="origin">
+  <div class="container reveal">
+    <div class="origin-split">
+      <div>
+        <p class="eyebrow">Where I Started</p>
+        <h2 class="section-title">A conventional upbringing and a body that was waving the white flag.</h2>
+        <p>I grew up in a very normal household when it came to food, personal care, and cleaning products.</p>
+        <p>My parents loved me deeply and followed the information and recommendations available to them at the time. They simply did not know what they had never been taught.</p>
+        <p>Like so many families, we ate ultra-processed foods, fast food, Hot Pockets, Pop Tarts, and plenty of brightly colored snacks that probably could have glowed in the dark.</p>
+        <p>Our personal care and cleaning products came from the grocery store, Walmart, and when we were feeling fancy… Bath &amp; Body Works.</p>
+        <p>Nothing about it seemed unusual. It was simply normal.</p>
+        <p>But as I got older, my body started telling a different story.</p>
+        <p>I dealt with frequent strep throat, mononucleosis, tonsillitis, bronchitis, and round after round of antibiotics. Depression and anxiety entered the picture early, too.</p>
+        <p>After going through a divorce at a young age, I spent years trying to find myself in all the wrong places—usually somewhere near the bottom of a bottle in a hole-in-the-wall bar.</p>
+        <p>I smoked a pack of cigarettes a day and lived in a way that looked carefree from the outside but felt anything but free on the inside.</p>
+        <p>Then one day, something in me woke up. I knew I needed a different life.</p>
+        <p>So I asked my boss a question that would change everything: “Is there anywhere in the world I could move and still keep my job?”</p>
+        <p>Two weeks later, I packed up my life in Austin, TX and moved to Nashville, Tennessee. I knew no one. I had no safety net. I was starting completely from scratch.</p>
+        <p>Eight months later, I was married. 21 months after that, we welcomed our first baby girl.</p>
+        <p>And suddenly, the choices I made were no longer only about me.</p>
+        <p>Motherhood gave me a reason to question what I had always accepted. I realized I had the opportunity to raise my babies differently—to learn what I had never been taught and give them a healthier foundation from the beginning.</p>
+        <p>That was the beginning of everything.</p>
+      </div>
+      <div class="about-photo-wrap">
+        <div class="about-photo family">
+          <img src="roxanne-family.jpg" alt="Roxanne with her family" loading="lazy" decoding="async" width="720" height="540">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="origin" style="background:var(--linen-warm);">
+  <div class="container reveal">
+    <p class="eyebrow">My Health Journey</p>
+    <h2 class="section-title">Sixteen years of asking better questions.</h2>
+    <p>My wellness journey did not begin with a perfectly stocked pantry, a degree in nutrition, or an overnight transformation.</p>
+    <p>It began slowly. Organic fruit. A few supplements. Learning about essential oils. Turning over the bottle and wondering what half the words meant.</p>
+    <p>One question led to another, and before long, I was deep-diving into every corner of holistic health I could find.</p>
+    <p>I do not claim to know everything. In fact, the more I learn, the more I realize how much there still is to understand.</p>
+    <p>Health information evolves. Research changes. Our bodies change. Our seasons change.</p>
+    <p>But I also began noticing meaningful differences when I reduced my exposure to certain personal care and household products. Over time, painful cystic acne became part of my past, and my overall experience with everyday illness changed significantly.</p>
+    <p>Still, my health journey was far from over.</p>
+    <p>After the birth of my third baby, my body began making it impossible to ignore that something deeper was going on.</p>
+    <p>In 2020, I was diagnosed with Hashimoto's thyroiditis—although looking back, it was clear that my body had likely been battling it for many years before I finally had a name for it.</p>
+    <p>The diagnosis connected so many dots, but it also opened the door to an entirely new and elevated level of learning.</p>
+    <p>I began to understand that reducing toxins and choosing cleaner products was incredibly important—but it was not the whole picture.</p>
+    <p>My body needed support on multiple levels, and healing was not going to come from one product, one supplement, or one perfect routine.</p>
+    <p>In the years that followed, I continued navigating layers of autoimmune and hormonal challenges that forced me to slow down, listen more closely, and start asking new questions.</p>
+    <p>After nine years of building in clean beauty at full speed, I found myself searching again.</p>
+    <p>Not because I had stopped believing in clean beauty. Not because the work I had done no longer mattered. And not because I was looking for a shiny new opportunity.</p>
+    <p>I was searching because my life had expanded beyond beauty—and I needed the products and mission I stood behind to expand with it.</p>
+    <p>I still deeply value the skincare and makeup products I have shared for years. But I also knew that makeup and skincare alone could not address every layer of wellness my family, my clients, and I were navigating.</p>
+    <p>I was not searching for another slightly better ingredient list. I was searching for a bigger vision.</p>
+    <p>A company with an entire philosophy built around freshness, product integrity, innovation, transparency, sustainability, beauty, and whole-body wellness.</p>
+    <p>I was looking for the company I had been asking the industry to become.</p>
+    <div class="pull">Then I learned that it already existed.</div>
+  </div>
+</section>
+
+<section class="chapters">
+  <div class="container reveal">
+    <p class="eyebrow">The Journey</p>
+    <h2 class="section-title">How I got here.</h2>
+
+    <div class="chapter">
+      <span class="chapter-num">01</span>
+      <div>
+        <h3>The spark</h3>
+        <p>Like many women who begin working in wellness, I started because something in my own life needed to change.</p>
+        <p>Then I became pregnant, and it was no longer only about my body. It was about the tiny life growing inside of me.</p>
+        <p>That season sparked something deeper. I began to understand that the products we use every day matter—and that sharing better options could become more than a personal passion.</p>
+        <p>It could become a real business. A vehicle for impact. A way to help women while also creating income, flexibility, community, and purpose.</p>
+        <p>What began as a desire to make better choices for my own family became a calling to help other women do the same.</p>
+        <p>That love for sharing, teaching, and helping has never left me. It is still the heartbeat behind everything I do.</p>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <span class="chapter-num">02</span>
+      <div>
+        <h3>Nine years of building</h3>
+        <p>When I decided to build, I went all in.</p>
+        <p>I studied. I found mentors. I stayed up late writing content, answering messages, creating systems, learning ingredients, helping women choose their first products, and matching foundation shades through photos taken in questionable bathroom lighting.</p>
+        <p>I learned what makes someone curious. I learned what helps her feel confident enough to make a change. I learned what makes her stay.</p>
+        <p>And most importantly, I learned that women do not need more pressure. They need someone they trust.</p>
+        <p>Over the past nine years, I have helped thousands of women begin removing products that no longer aligned with their standards and replace them with options they felt good about.</p>
+        <p>I never take that trust lightly. It is an honor every single time someone says, “I knew you would tell me the truth.”</p>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <span class="chapter-num">03</span>
+      <div>
+        <h3>The honest chapter</h3>
+        <p>After nine years in the industry—and while continuing to work through my own health challenges—I began to feel that something was missing.</p>
+        <p>Not a missing lipstick shade. Not another serum. Not another product launch wrapped in a pretty campaign.</p>
+        <p>A bigger piece.</p>
+        <p>I wanted products that could support more areas of daily life. I wanted to guide people beyond beauty and into a more connected conversation about wellness.</p>
+        <p>I had not lost faith in clean living. I had simply outgrown the idea that clean beauty should stop at the bathroom counter.</p>
+        <p>I was not burned out on helping people. I was not done building. I was not walking away from the mission. I was ready to go deeper.</p>
+        <p>But when you have spent years teaching people to raise their standards, you cannot lower your own just because you are ready for something new.</p>
+        <p>The next chapter had to be extraordinary. My checklist was long. My standards were high. And honestly, I was not sure what I was looking for even existed.</p>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <span class="chapter-num">04</span>
+      <div>
+        <h3>Discovering Ringana</h3>
+        <p>Then I learned about Ringana.</p>
+        <p>A family-founded Austrian company established in 1996, built around a concept that immediately stopped me in my tracks: fresh production instead of relying on long-term preservation.</p>
+        <p>Freshly produced skincare and supplements. Potent plant-based ingredients. Manufacturing handled in-house. A commitment to transparency, sustainability, innovation, and formulas designed differently from the conventional beauty and wellness model.</p>
+        <p>Ringana has been approaching beauty and wellness through a lens I had been waiting to see—one that connected what we put on our bodies with how we support them from within.</p>
+        <p>The more I learned, the more I realized: This was not a pivot away from my story or my current path. It was the next chapter of it.</p>
+        <p>To say I have been counting down to the U.S. launch would be an understatement. This is the kind of standard I have been asking the industry to meet for years.</p>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <span class="chapter-num">05</span>
+      <div>
+        <h3>What's next</h3>
+        <p>I am now building my founding Ringana team ahead of the U.S. launch.</p>
+        <p>Through this partnership, I am gaining early access to experience products, study the philosophy behind them, and share honest first impressions as the U.S. offering takes shape.</p>
+        <p>And “honest” will always be the operative word.</p>
+        <p>I will share what I love. I will explain what makes something different. I will answer the hard questions. And I will never ask anyone to blindly follow me into something simply because I am excited about it.</p>
+        <p>I want you to understand why. Because trust is not built through hype. It is built through consistency. It is built by telling the truth even when the truth is less marketable. And it is built over years—not during a launch week.</p>
+        <p>This next season is bigger than introducing a new product line. It is about helping women rethink what freshness, beauty, wellness, and business can look like when none of them have to be separated.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-build">
+  <div class="container reveal">
+    <p class="eyebrow">Why Build With Me</p>
+    <div class="why-roxanne">
+      <h3>Why build with me?</h3>
+      <p>I have personally sold nearly $700,000 in clean beauty and skincare over the past nine years.</p>
+      <p>Not my team's sales. Not a company-wide number. My personal sales, built through serving an incredible and loyal community of clients.</p>
+      <p>Numbers like that are not created by luck or one viral post. They are built through follow-up. Knowledge. Consistency. Trust. Systems that work. And thousands of small conversations where someone felt heard, supported, and never pressured.</p>
+      <p>I know how to help a woman make her first clean swap. I know how to turn complicated information into language that makes sense. I know how to build relationships that last far beyond one transaction. And I know how to help women build businesses that feel personal without becoming chaotic.</p>
+      <p>When you join my founding team, you are not starting from a blank page.</p>
+      <p>You will receive the systems my team and I have spent years developing and refining. You will receive direct mentorship from someone who has built through changing seasons, shifting algorithms, personal challenges, company changes, and every stage in between.</p>
+      <p>You will learn how to share products with integrity, communicate clearly, care for customers well, and build without becoming someone you no longer recognize.</p>
+      <p>You will also gain access to the ingredient knowledge and wellness education I have spent years developing—so you can confidently support yourself, your family, and the people who trust you.</p>
+      <p>I cannot promise an overnight success story. I do not believe in building businesses on borrowed hype.</p>
+      <p>But I can promise leadership that is honest, experienced, deeply invested, and willing to roll up its sleeves beside you.</p>
+      <div class="pull" style="margin-bottom:0;">The next chapter is fresh. And we are arriving early.</div>
+    </div>
+  </div>
+</section>
+
+<section class="right-fit">
+  <div class="container reveal">
+    <p class="eyebrow">The Right Fit</p>
+    <h2 class="section-title">It's important to me that I feel like the right fit for you.</h2>
+    <div class="fit-grid">
+      <blockquote class="fit-callout">I'd rather build with people who value honesty over hype — and integrity over shortcuts.</blockquote>
+      <div class="fit-list">
+        <p>I'm not here to pressure anyone. I'm here to share what I've found, answer your questions honestly, and help you decide if this is right for your life — whether that's as a customer, a teammate, or neither.</p>
+        <p>If you care about product integrity, freshness that actually means something, and building something meaningful before a market even opens — we should talk. If you're looking for a get-rich-quick scheme, I'm probably not your person, and that's okay.</p>
+        <p>The best partnerships start with honesty on both sides. That's how I've always operated, and it's not changing now.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container reveal">
+    <p class="eyebrow">Stay Connected</p>
+    <h2 class="section-title">Want to follow along?</h2>
+    <p class="lede">Join the founding list for launch updates and my honest product notes — or reach out on Instagram if you'd rather chat first.</p>
+    <div class="btn-row">
+      <a href="#" class="btn btn-brass" data-open-connect>Get First Access</a>
+      <a href="https://instagram.com/mindfullivingrox" class="btn btn-pine" target="_blank" rel="noopener">Message Me on Instagram</a>
+    </div>
+  </div>
+</section>
+
+<div class="connect-modal" id="connectModal" aria-hidden="true" role="dialog" aria-labelledby="connectModalTitle">
+  <div class="connect-modal-backdrop" data-close-connect></div>
+  <div class="connect-modal-panel letter-panel">
+    <button class="connect-modal-close" type="button" aria-label="Close" data-close-connect>&times;</button>
+    <div class="letter-paper">
+            <header class="letter-head">
+        <h2 id="connectModalTitle" class="letter-salutation">friend,</h2>
+      </header>
+      <div class="letter-body-copy">
+        <p>I want you on the list first — launch updates, my honest product notes, and first access if you want to build alongside me.</p>
+        <p>Tap the button below and it will open a text message with the keyword already filled in. Send it, and you're added to my founding list so you're the first to hear when Ringana arrives in America.</p>
+      </div>
+      <div class="letter-form">
+        <a href="sms:+18332320309?&body=ringana" class="btn btn-brass letter-text-cta">Text Me to Join</a>
+      </div>
+      <p class="letter-sign">xoxo, mindful living rox</p>
+      <p class="modal-fine">Standard message &amp; data rates may apply. Reply STOP anytime to opt out. By tapping, you agree to receive texts at the number you text from. Consent is not a condition of purchase. <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- CLIENT:END page-about -->
+<!-- CLIENT:START footer -->
+<footer>
+  <p class="foot-brand">Ringana <span>·</span> with Roxanne</p>
+  <p class="foot-cta">Questions before launch? <a href="https://instagram.com/mindfullivingrox" target="_blank" rel="noopener">DM me on Instagram</a> — I read every message.</p>
+  <div class="foot-social">
+    <a href="https://instagram.com/mindfullivingrox" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/RoxyMUnderwood/" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.facebook.com/groups/mindfullivingrox" target="_blank" rel="noopener">FB Group</a>
+  </div>
+  <p class="foot-legal">Roxanne is an independent Ringana Fresh Partner (pending U.S. launch). This is a personal page and is not an official Ringana corporate website. These statements have not been evaluated by the FDA; products are not intended to diagnose, treat, cure, or prevent any disease.</p>
+  <p class="foot-copy">&copy; 2026 Roxanne · Mindful Living · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
+</footer>
+<!-- CLIENT:END footer -->
+
+<script>
+/* CORE:START js */
+const siteHeader=document.getElementById('siteHeader');
+let headerTicking=false;
+
+function measureExpandedHeader(){
+  if(!siteHeader)return;
+  const wasScrolled=siteHeader.classList.contains('is-scrolled');
+  siteHeader.classList.remove('is-scrolled');
+  document.documentElement.style.setProperty('--header-expanded',siteHeader.offsetHeight+'px');
+  if(wasScrolled)siteHeader.classList.add('is-scrolled');
+  document.documentElement.style.setProperty('--header-offset',siteHeader.offsetHeight+'px');
+}
+
+function updateSiteHeader(){
+  if(!siteHeader)return;
+  const y=window.scrollY;
+  if(siteHeader.classList.contains('is-scrolled')){
+    if(y<32)siteHeader.classList.remove('is-scrolled');
+  }else if(y>72){
+    siteHeader.classList.add('is-scrolled');
+  }
+  document.documentElement.style.setProperty('--header-offset',siteHeader.offsetHeight+'px');
+}
+
+measureExpandedHeader();
+window.addEventListener('resize',measureExpandedHeader);
+window.addEventListener('scroll',()=>{
+  if(headerTicking)return;
+  headerTicking=true;
+  requestAnimationFrame(()=>{
+    updateSiteHeader();
+    headerTicking=false;
+  });
+},{passive:true});
+
+const connectModal=document.getElementById('connectModal');
+function setConnectOpen(open){
+  if(!connectModal)return;
+  connectModal.classList.toggle('open',open);
+  connectModal.setAttribute('aria-hidden',open?'false':'true');
+  document.body.classList.toggle('nav-open',open);
+}
+document.querySelectorAll('[data-open-connect]').forEach(el=>{
+  el.addEventListener('click',e=>{e.preventDefault();setConnectOpen(true);});
+});
+connectModal?.querySelectorAll('[data-close-connect]').forEach(el=>{
+  el.addEventListener('click',()=>setConnectOpen(false));
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&connectModal?.classList.contains('open'))setConnectOpen(false);
+});
+
+const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+/* CORE:END js */
+</script>
+</body>
+</html>
