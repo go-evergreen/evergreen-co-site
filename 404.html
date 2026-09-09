@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evergreen Co</title>
+<meta name="robots" content="noindex">
+</head>
+<body>
+<script>
+(function () {
+  var path = String(location.pathname || "/");
+  var search = String(location.search || "");
+  var hash = String(location.hash || "");
+  var prettyLead = String(path || "").match(/\/(ringana-with-[a-z0-9-]+)\/?$/i);
+  var prettyHops = {
+  "ringana-with-becky": "https://go-evergreen.github.io/ringana-with-becky/",
+  "ringana-with-cindee": "https://go-evergreen.github.io/ringana-with-cindee/",
+  "ringana-with-jennifer": "https://go-evergreen.github.io/ringana-with-jennifer/",
+  "ringana-with-julie": "https://go-evergreen.github.io/ringana-with-julie/",
+  "ringana-with-kathryn": "https://go-evergreen.github.io/ringana-with-kathryn/",
+  "ringana-with-kimberly": "https://go-evergreen.github.io/ringana-with-kimberly/",
+  "ringana-with-lily": "https://go-evergreen.github.io/lily-builds-fresh/",
+  "ringana-with-lisa": "https://go-evergreen.github.io/ringana-with-dr.lisa/",
+  "ringana-with-roxanne": "https://go-evergreen.github.io/ringana-with-roxanne/"
+};
+  if (prettyLead && prettyHops[prettyLead[1].toLowerCase()]) {
+    location.replace(prettyHops[prettyLead[1].toLowerCase()] + search + hash);
+    return;
+  }
+  location.replace("/" + search + hash);
+})();
+</script>
+<p><a href="/">Back to Evergreen Co</a></p>
+</body>
+</html>
