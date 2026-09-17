@@ -37,6 +37,10 @@
       return;
     }
   }
+  if (/^\/unstick(\/|\.html|$)/i.test(path)) {
+    location.replace("/unstick.html" + search + hash);
+    return;
+  }
   location.replace("/" + search + hash);
 })();
 </script>
